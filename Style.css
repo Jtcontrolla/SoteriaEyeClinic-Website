@@ -45,7 +45,7 @@ a {
     margin-right: 10%;
     position: fixed;
     background-color: transparent;
-    z-index: 1;
+    z-index: 2;
 }
 
 li.dropdown {
@@ -62,10 +62,10 @@ li.dropdown {
     position: absolute;
     right: 278px;
     backdrop-filter: blur(15px);
-    width: 250px;
+    width: 200px;
     justify-content: center;
     margin-top: 5px;
-
+    border-radius: 35px;
 }
 
 .dropdown-content a {
@@ -74,9 +74,8 @@ li.dropdown {
     display: block;
     text-align: center;
     font-size: 17px;
-    padding: 20px;
+    padding: 10px;
     font-weight: bold;
-    z-index: 2;
 }
 
 .dropdown:hover .dropdown-content {
@@ -168,10 +167,11 @@ video{
     z-index: 1;
     color: black;
     position: absolute;
-    top: 300;
+    top: 330;
     right: 80;
     backdrop-filter: blur( 5px);
     padding: 15px;
+    border-radius: 15px;
 }
 
 .big-text{
