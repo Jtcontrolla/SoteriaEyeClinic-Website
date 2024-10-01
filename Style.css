@@ -51,7 +51,7 @@ a {
 }
 
 .links> li > a:hover {
-    background-color: aqua;
+    background-color: darkblue;
     color: #fff;
 }
 
@@ -83,7 +83,7 @@ a {
 }
 
 .reg_btn {
-    background-color: aqua;
+    background-color: darkblue;
     color: #fff;
     padding: 10px;
     border: none;
