@@ -5,3 +5,7 @@ const dropDownMenu = document.querySelector('.dropdown_menu');
 toggleBtn.onclick = function (){
     dropDownMenu.classList.toggle('open')
 }
+
+$(document).ready(function(){
+    $('.carousel').carousel();
+});
