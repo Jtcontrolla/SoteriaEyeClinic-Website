@@ -11,25 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
-
-h1{
-    font-size: 70px;
-    color: aqua;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: bold;
-}
-h2{
-    font-size: 40px;
-    color: aqua;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: bold;
-}
-h3{
-    font-size: 20px;
-    color: aqua;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: bold;
+    font-family: "Poppins", sans-serif;
 }
 
 li {
@@ -49,7 +31,7 @@ a {
     padding: 6px 15px;
     margin: 15px;
     font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Poppins";
 }
 
 .navbar {
@@ -75,15 +57,15 @@ li.dropdown {
 }
 
 .dropdown-content {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Poppins";
     display: none;
     position: absolute;
     right: 278px;
-    background-color: transparent;
+    backdrop-filter: blur(15px);
     width: 250px;
-    z-index: 1;
     justify-content: center;
     margin-top: 5px;
+
 }
 
 .dropdown-content a {
@@ -94,6 +76,7 @@ li.dropdown {
     font-size: 17px;
     padding: 20px;
     font-weight: bold;
+    z-index: 2;
 }
 
 .dropdown:hover .dropdown-content {
@@ -117,7 +100,7 @@ li.dropdown {
 }
 
 .reg_btn {
-    background-color: darkblue;
+    background-color: rgb(30, 30, 156);
     color: #fff;
     padding: 6px 15px;
     margin: 15px;
@@ -179,6 +162,37 @@ li.dropdown {
 
 video{
     width: 100%;
+}
+
+.head-text{
+    z-index: 1;
+    color: black;
+    position: absolute;
+    top: 300;
+    right: 80;
+    backdrop-filter: blur( 5px);
+    padding: 15px;
+}
+
+.big-text{
+    color: #fff;
+    font-size: 60px;
+}
+
+.head-p{
+    color: #131212;
+    font-size: 20px;
+    margin-top: -45px;
+    padding-bottom: 20px;
+
+}
+
+.see{
+    padding: 6px 15px;
+    color: #a58860;
+    border-radius: 20px;
+    border: 1px outset;
+    margin-top: 40px;
 }
 
 @media(max-width: 768px){
