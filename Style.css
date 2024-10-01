@@ -51,7 +51,7 @@ a {
 }
 
 .links> li > a:hover {
-    background-color: darkblue;
+    background-color: rgb(4, 4, 61);
     color: #fff;
 }
 
