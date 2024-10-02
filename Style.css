@@ -351,6 +351,7 @@ h2 .stroke-b{
     right: 80;
 
 }
+
 .about-img1{
     border-radius: 20px;
     position: absolute;
@@ -359,11 +360,43 @@ h2 .stroke-b{
 .about-img2{
     border-radius: 20px;
     position: absolute;
-    left: 320;
-    bottom: -670;
+    left: 100;
+    bottom: -690;
 }
+
+.about-img3 {
+    border-radius: 20px;
+    position: absolute;
+    left: 400;
+    top: 910
+}
+
 .about-h{
     color: rgb(107, 44, 44);
     font-size: 40px;
     font-weight: bold;
+}
+.sp1{
+    color: rgb(22, 22, 22);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.vision{
+    position: absolute;
+    bottom: 10;
+    left: -580;
+}
+
+.vision a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(22, 22, 22);
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+.vision a:hover{
+    background-color: rgb(20, 113, 219);
+    scale: 1.05;
 }
