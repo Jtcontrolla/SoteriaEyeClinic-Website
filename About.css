@@ -323,5 +323,7 @@ video {
     }
     .dropdown_menu {
         display: block;
+        z-index: 2;
+        width: 75vw;
     }
 }
