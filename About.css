@@ -104,7 +104,7 @@ body {
 
 header {
     background-color: whitesmoke;
-    background-image: url(./Assets/about\ img\ 2.jpg);
+    background-image: url(./Assets/04/service-bg-scaled.jpg);
     background-size: cover;
     height: 118vh;
     width: 100%;
@@ -182,7 +182,7 @@ li.dropdown {
     display: none;
     position: absolute;
     right: 278px;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(30px);
     width: 200px;
     justify-content: center;
     margin-top: 5px;
@@ -190,7 +190,7 @@ li.dropdown {
 }
 
 .dropdown-content a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     display: block;
     text-align: center;
@@ -281,7 +281,7 @@ video {
     position: absolute;
     top: 250;
     right: 110;
-    backdrop-filter: blur( 5px);
+    backdrop-filter: blur( 35px);
     padding: 15px;
     border-radius: 15px;
     width: 40%;
@@ -300,7 +300,7 @@ video {
 }
 
 .head-p {
-    color: #131212;
+    color: #fff;
     font-size: 18px;
     padding-bottom: 20px;
 }
@@ -326,4 +326,203 @@ video {
         z-index: 2;
         width: 75vw;
     }
+}
+
+.hr-b {
+    width: 8%;
+    border: 1.7px solid rgb(20, 113, 219);
+    position: absolute;
+    left: 490;
+    bottom: -215;
+}
+
+h2 {
+    text-align: right;
+    margin-right: 190px;
+    font-size: 55px;
+    color: rgb(20, 113, 219);
+    font-weight: bold;
+}
+
+h2 .stroke-b {
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(20, 113, 219);
+}
+
+.about {
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+.left, .right {
+    flex: 1;
+    padding: 20px;
+}
+  
+.left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.container-h {
+    color: rgb(107, 44, 44);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container-p {
+    color: black;
+}
+
+.counter-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.counter-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.counter-item {
+    text-align: center;
+    margin: 20px;
+}
+
+.counter-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.counter {
+    font-size: 48px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.counter-item .plus {
+    font-size: 48px;
+    color: #007bff;
+    position: relative;
+    top: -72.5px;
+    left: 40;
+    font-weight: bolder;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card i {
+    font-size: 48px;
+    color: rgb(20, 113, 219);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.team {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 35px;
+}
+
+.container-img {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 25px;
+}
+
+.overlay h3 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+.overlay p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.overlay li {
+    list-style: circle;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+}
+
+.image-container.active img {
+    transform: scale(1.1);
+}
+
+.image-container.active .overlay {
+    opacity: 1;
 }
