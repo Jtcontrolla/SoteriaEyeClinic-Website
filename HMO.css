@@ -271,46 +271,47 @@ li.dropdown {
 
 video {
     width: 100%;
+    filter: brightness(0.8);
 }
 
 .head-text {
     z-index: 1;
     color: black;
     position: absolute;
-    top: 250;
-    right: 110;
-    backdrop-filter: blur( 5px);
+    top: 300;
+    left: 300;
+    backdrop-filter: blur( 6px);
     padding: 15px;
     border-radius: 15px;
-    width: 40%;
+    width: auto;
 }
 
-.big-text {
-    color: #fff;
-    font-size: 70px;
-    line-height: 70px;
-}
-
-.big-text .stroke {
+.stroke {
     color: transparent;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 2.5px;
     -webkit-text-stroke-color: #fff;
 }
 
-.head-p {
-    color: #131212;
-    font-size: 18px;
-    padding-bottom: 20px;
+.stroke1{
+    color: transparent;
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: #fff;
 }
 
-.see {
-    padding: 6px 15px;
-    color: rgb(107, 44, 44);
-    border-radius: 20px;
-    border: 1px outset;
-    margin-top: 40px;
+h2{
+    font-size: 150px;
+    color: #fff;
 }
 
+h4{
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+.wrapper{
+    padding-bottom: 50px;
+}
 
 .HMO{
     margin-left: 100px;
@@ -328,8 +329,50 @@ video {
 .flex-img{
     height: 200;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-left: 17px;
+}
+
+.flex-img:hover{
+    transform: translateY(-7px);
+}
+
+.Hmo1{
+    margin-left: 120px;
+}
+
+.HMO-text{
+    font-size: 45px;
+    color: rgb(107, 44, 44);
+}
+
+.HMO-Stroke{
+    color: transparent;
+    -webkit-text-stroke-color: rgb(20, 113, 219);
+    -webkit-text-stroke-width: 1.8px;
+}
+
+.parallax{
+    background-image: url(Assets/img1\ \(4\).jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    filter: brightness(0.6);
+}
+
+.parallax-overlay{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
 @media(max-width: 768px) {
