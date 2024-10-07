@@ -326,10 +326,52 @@ video {
     }
 }
 
+.parallax{
+    background-image: url(Assets/Untitled-1.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    padding: 20px 120px;
+}
 
+.parallax-overlay{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
 
+.p3{
+    color: #fff;
+    font-size: 20px;
+}
 
+.sot{
+    font-size: 45px;
+    color: #fff;
+}
 
+.btn4{
+    margin-left: 180px;
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.btn4:hover{
+    background-color:rgb(20, 113, 219);
+    color: #fff;
+    transform: translateY(-5px);
+    transition: 0.7s ease;
+}
 
 
 
