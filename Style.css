@@ -457,6 +457,7 @@ h2 .stroke-b {
     margin: 0;
     padding: 0;
     padding: 20px 120px;
+    margin-top: 700px;
 }
 
 .parallax-overlay{
@@ -468,6 +469,30 @@ h2 .stroke-b {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.p3{
+    color: #fff;
+    font-size: 20px;
+}
+
+.sot{
+    font-size: 45px;
+    color: #fff;
+}
+
+.btn4{
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.btn4:hover{
+    background-color:rgb(20, 113, 219);
+    color: #fff;
+    transform: translateY(-5px);
+    transition: 0.7s ease;
 }
 
 
