@@ -326,6 +326,7 @@ video {
     }
 }
 
+<<<<<<< Updated upstream
 .parallax{
     background-image: url(Assets/Untitled-1.png);
     background-attachment: fixed;
@@ -335,6 +336,37 @@ video {
     margin: 0;
     padding: 0;
     padding: 20px 120px;
+=======
+.hr-b {
+    width: 8%;
+    border: 1.7px solid rgb(20, 113, 219);
+    position: relative;
+    left: 400;
+    bottom: 25;
+}
+
+h2 {
+    text-align: right;
+    margin-right: 190px;
+    font-size: 55px;
+    color: rgb(20, 113, 219);
+    font-weight: bold;
+}
+
+h2 .stroke-b {
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(20, 113, 219);
+}
+
+.services {
+    margin-top: 35px;
+}
+
+.services h2 {
+    text-align: left;
+    margin-left: 40px;
+>>>>>>> Stashed changes
 }
 
 .parallax-overlay{
