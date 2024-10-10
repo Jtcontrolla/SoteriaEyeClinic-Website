@@ -33,8 +33,6 @@ function animateCounter(element, targetValue, duration) {
   let currentValue = 0;
   const increment = Math.ceil(targetValue / (duration / 5)); // Calculate the increment value
 
-  const members = "+";
-
   // Animate the counter
   const intervalId = setInterval(() => {
     currentValue += increment;
