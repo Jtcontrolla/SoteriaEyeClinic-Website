@@ -435,9 +435,48 @@ p.atext{
     border: 3px rgb(20, 113, 219) solid;
 }
 
+.health-img{
+    padding: 40px 120px;
+}
 
+.health-top, .health-down{
+    display: flex;
+    padding: 10px 2px 0 0;
+}
 
+.health-head-img{
+    height: 300px;
+    width: 400px;
+    border: 1px grey solid;
+    text-align: center;
+    background-image: url(Assets/img1\ \(6\).jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 10px;
+    padding-top: 30px;
+    border-radius: 5px;
+    border: 0px groove;
+}
 
+.health-text{
+    font-size: 30px;
+    color: white;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.health-btn{
+    font-size: 20px;
+    color: white;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px white solid;
+}
+
+.health-btn:hover{
+    background-color: white;
+    color: black;
+}
 
 
 
