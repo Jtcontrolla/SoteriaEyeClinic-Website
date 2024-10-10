@@ -80,14 +80,16 @@
     </header>
 
     <section class="appointment">
-        <h3>BOOK YOUR APPOINTMENT</h3>
+        <h3>Book Your <span class="stroke-b">Appointment</span></h3>
         <p>
             We take pride in providing comprehensive eye treatment to the same high standards as the greatest eye clinics. 
             We are a group of optometrists, opticians, ophthalmologists, front office and administrative personnel who are devoted and pleasant.
             – just fill in the blanks below and we’ll get back to you soon.
         </p>
-        <img class="glasses" src="./Assets/glasses.png" alt="">
-        <img class="chart" src="./Assets/imparment chart.png" alt="">
+        <img class="glasses" id="img-effect" src="./Assets/glasses.png" alt="">
+        <img class="chart" id="img-effect" src="./Assets/imparment chart.png" alt="">
+        <img class="lens" id="img-effect" src="./Assets/contact lens.png" alt="">
+        <img class="vis-imp-machine" id="img-effect" src="./Assets/visual imparment machine.png" alt="">
         <div class="form-container">
             <div class="form-header">
              <h1>
@@ -174,6 +176,17 @@
               <label for="appointment">
                Book Your Appointment:
               </label>
+              <div class="form-group">
+                <label for="branches">
+                    Branch
+                </label>
+                <select name="branch" id="branch">
+                    <option value="">Select a branch</option>
+                    <option value="delta">Delta</option>
+                    <option value="lagos">Lagos</option>
+                    <option value="uyo">Uyo</option>
+                </select>
+              </div>
               <div style="display: flex; gap: 10px;">
                <input id="appointment-date" name="appointment-date" type="date"/>
                <input id="appointment-time" name="appointment-time" type="time"/>
