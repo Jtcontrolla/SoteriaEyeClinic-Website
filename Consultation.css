@@ -190,7 +190,7 @@ li.dropdown {
 }
 
 .dropdown-content a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     display: block;
     text-align: center;
@@ -242,7 +242,7 @@ li.dropdown {
 }
 
 .reg_btn {
-    background-color: rgb(20, 113, 219);
+    background-color:rgb(22, 22, 22);
     color: #fff;
     padding: 5px 14px;
     margin: 15px;
@@ -259,7 +259,7 @@ li.dropdown {
 .reg_btn:hover {
     scale: 1.05;
     color: #fff;
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(20, 113, 219);
 }
 
 .reg_btn:active {
@@ -326,6 +326,236 @@ video {
     }
 }
 
+.stroke-b {
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(20, 113, 219);
+}
+
+/* Form Styles */
+
+.appointment {
+    background-color: #f7f7f7;
+    padding: 50px;
+}
+  
+.appointment h3 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(20, 113, 219);
+}
+  
+.appointment p {
+    font-size: 14px;
+    text-align: center;
+    /* margin-bottom: 30px; */
+}
+
+.glasses {
+    width: 100px;
+    cursor: pointer;
+    opacity: .5;
+    position: relative;
+    top: 80;
+    left: -35;
+    animation: moveGlass 3s infinite alternate;
+}
+
+@keyframes moveGlass {
+    0% {
+        transform: translateY(-50px)
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+.chart {
+    width: 100px;
+    cursor: pointer;
+    opacity: .5;
+    position: relative;
+    top: -150;
+    right: -900;
+    animation: moveChart 3s infinite alternate;
+}
+
+@keyframes moveChart {
+    0% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+.lens {
+    width: 100px;
+    cursor: pointer;
+    opacity: .5;
+    position: relative;
+    top: 1130px;
+    right: -800;
+    animation: moveLens 3s infinite alternate;
+}
+
+@keyframes moveLens {
+    0% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+.vis-imp-machine {
+    width: 100px;
+    cursor: pointer;
+    opacity: .5;
+    position: relative;
+    top: 80;
+    right: -800;
+    animation: moveMachine 3s infinite alternate;
+}
+
+@keyframes moveMachine {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+#img-effect:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 7px #b7b5b5,
+                0 0 7px #b7b5b5,
+                0 0 7px #b7b5b5;
+    /* position: relative;
+    isolation: isolate; */
+}
+
+/* .form-container::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: .2;
+    background-image: url(./Assets/consult-form\ 2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+} */
+
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-header h1 {
+    color: #00a2e8;
+    font-size: 24px;
+    margin: 0;
+}
+.form-header img {
+    width: 100px;
+    height: 50px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group input[type="time"],
+.form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #00a2e8;
+    border-radius: 4px;
+}
+.form-group input[type="radio"] {
+    margin-right: 10px;
+}
+.form-group .radio-group {
+    display: flex;
+    align-items: center;
+}
+.form-group .radio-group label {
+    margin-right: 20px;
+}
+.form-group .file-upload {
+    border: 2px dashed #00a2e8;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    color: #00a2e8;
+}
+.form-group .file-upload input[type="file"] {
+    display: none;
+}
+.form-group .file-upload label {
+    cursor: pointer;
+}
+
+.form-group select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #00a2e8;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.form-group .submit-btn {
+    background-color:rgb(22, 22, 22);
+    color: #fff;
+    padding: 5px 14px;
+    margin: 15px;
+    margin-right: 100px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale .2 ease;
+}
+
+.submit-btn:hover {
+    scale: 1.05;
+    color: #fff;
+    background-color: rgb(20, 113, 219);
+}
+
 .parallax{
     background-image: url(Assets/Untitled-1.png);
     background-attachment: fixed;
@@ -362,8 +592,10 @@ video {
     margin-left: 180px;
     background-color: black;
     color: #fff;
-    padding: 10px 20px;
+    padding: 5px 14px;
     border-radius: 20px;
+    font-size: 15px;
+    margin: 15px;
 }
 
 .btn4:hover{
