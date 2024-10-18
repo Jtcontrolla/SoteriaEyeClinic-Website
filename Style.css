@@ -336,19 +336,20 @@ section {
     width: 100%;
     background-color: whitesmoke;
     margin-top: 50px;
+    margin-top: 0px;
 }
 
 .hr-b {
     width: 8%;
     border: 1.7px solid rgb(20, 113, 219);
     position: relative;
-    left: 490;
+    left: 580;
     bottom: -57;
 }
 
 h2 {
     text-align: right;
-    margin-right: 190px;
+    margin-right: 100px;
     font-size: 55px;
     color: rgb(20, 113, 219);
     font-weight: bold;
@@ -430,6 +431,207 @@ h2 .stroke-b {
     scale: 1.05;
 }
 
+/* our service section */
+.section__container{
+    background-image: url(./Assets/img1\ \(6\).jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    margin: 0;
+    padding: 0;
+    padding: 20px 120px;
+    /* margin-top: 700px; */
+}
+.service__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .service__header__content p {
+    max-width: 600px;
+  }
+  .service-h2{
+    color: white;
+  }
+  .service-hr-b{
+    width: 13%;
+    border: 1.7px solid rgb(20, 113, 219);
+    position: relative;
+    left: 540;
+    bottom: -57;
+  }
+  .service-p{
+    color: white;
+  }
+  
+  .service__btn {
+    padding: 0.75rem 1rem;
+    outline: none;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid rgb(20, 113, 219);
+    background-color: rgb(20, 113, 219);
+    border-radius: 5px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .service__btn:hover {
+    color: #fff;
+    background-color: rgb(22, 22, 22);
+    border: 1px solid rgb(22, 22, 22);
+  }
+  
+  .service__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  .service__card {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .service__card span {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    background-color: var(--primary-color-light);
+    border-radius: 100%;
+    transition: 0.3s;
+  }
+  
+  .service__card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  
+  .service__card p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+  }
+  
+  .service__card a {
+    color: var(--primary-color);
+  }
+  
+  .service__card a:hover {
+    color: var(--primary-color-dark);
+  }
+  
+  .service__card:hover span {
+    color: var(--primary-color-light);
+    background-color: var(--primary-color);
+  }
+
+/* Health img Services Section */
+
+.health-img{
+    padding: 40px 120px;
+}
+
+.health-top, .health-down{
+    display: flex;
+    padding: 10px 2px 0 0;
+}
+
+.health-head-img{
+    height: 300px;
+    width: 400px;
+    border: 1px grey solid;
+    text-align: center;
+    background-image: url(Assets/img1\ \(6\).jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 10px;
+    padding-top: 20px;
+    border-radius: 5px;
+    border: 0px groove;
+}
+
+.health-text{
+    font-size: 30px;
+    color: white;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    position: relative;
+    left: 0;
+    
+}
+
+.health-btn{
+    font-size: 20px;
+    color: white;
+    padding: 8px 25px;
+    background-color: transparent;
+    border: 2px white solid;
+    position: relative;
+    bottom: 10;
+}
+
+.health-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* Modal styles */
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */ /*Enable scrolling*/
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    overflow: scroll;
+    height: 700px;
+    margin-bottom: 300px;
+    border: 0px groove;
+    border-radius: 5px;
+  }
+  
+  .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-btn:hover,
+  .close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* parallax Section */
+
 .wrap {
     display: flex;
     /* background-image: url(./Assets/rela.jpg); */
@@ -501,88 +703,8 @@ h2 .stroke-b {
     transition: 0.7s ease;
 }
 
-.health-img{
-    padding: 40px 120px;
-}
 
-.health-top, .health-down{
-    display: flex;
-    padding: 10px 2px 0 0;
-}
 
-.health-head-img{
-    height: 300px;
-    width: 400px;
-    border: 1px grey solid;
-    text-align: center;
-    background-image: url(Assets/img1\ \(6\).jpg);
-    background-size: cover;
-    background-position: center;
-    margin-left: 10px;
-    padding-top: 30px;
-    border-radius: 5px;
-    border: 0px groove;
-}
-
-.health-text{
-    font-size: 30px;
-    color: white;
-    padding-top: 100px;
-    margin-bottom: 50px;
-}
-
-.health-btn{
-    font-size: 20px;
-    color: white;
-    padding: 10px 30px;
-    background-color: transparent;
-    border: 2px white solid;
-}
-
-.health-btn:hover{
-    background-color: white;
-    color: black;
-}
-
-/* Modal styles */
-.modal {
-    display: none; /* Hide the modal by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 50%;
-    top: 25%;
-    transform: translate(-50%, -50%);
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */ /*Enable scrolling*/
-    background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
-  }
-  
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    overflow: scroll;
-    height: 700px;
-    margin-bottom: 300px;
-    border: 0px groove;
-    border-radius: 5px;
-  }
-  
-  .close-btn {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close-btn:hover,
-  .close-btn:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
 
 
 
