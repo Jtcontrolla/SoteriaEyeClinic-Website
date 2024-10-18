@@ -13,6 +13,11 @@
     font-family: "Poppins", sans-serif;
 }
 
+/*p*/
+p{
+    margin-top: 20px;
+}
+
 
 /* #preloader {
     overflow: hidden;
@@ -326,6 +331,194 @@ video {
     }
 }
 
+/* Health img Services Section */
+
+.health-img{
+    padding: 40px 40px;
+}
+
+.health-top, .health-down{
+    display: flex;
+    padding: 10px 2px 0 0;
+}
+
+.health-head-img{
+    height: 300px;
+    width: 400px;
+    border: 1px grey solid;
+    text-align: center;
+    background-image: url(Assets/astigmatism.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 10px;
+    padding-top: 20px;
+    border-radius: 5px;
+    border: 0px groove;
+}
+
+.health-head-img2{
+    height: 300px;
+    width: 400px;
+    border: 1px grey solid;
+    text-align: center;
+    background-image: url(Assets/astigmatism.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 10px;
+    padding-top: 20px;
+    border-radius: 5px;
+    border: 0px groove;
+}
+
+.health-head-img:nth-child(2){
+    background-image: url(Assets/img1\ \(6\).jpg);
+}
+.health-head-img:nth-child(3){
+    background-image: url(Assets/img1\ \(11\).jpg);
+}
+.health-head-img2:nth-child(1){
+    background-image: url(Assets/img1\ \(10\).jpg);
+}
+.health-head-img2:nth-child(2){
+    background-image: url(Assets/img1\ \(9\).jpg);
+}
+.health-text{
+    font-size: 30px;
+    color: white;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    position: relative;
+    left: 0;
+    
+}
+
+.health-btn{
+    font-size: 20px;
+    color: white;
+    padding: 8px 25px;
+    background-color: transparent;
+    border: 2px white solid;
+    position: relative;
+    bottom: 10;
+}
+
+.health-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.wrapper2{
+    padding: 0px 40px;
+}
+
+/* our service section */
+.section__container{
+    background-image: url(./Assets/img1\ \(6\).jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    margin: 0;
+    padding: 0;
+    padding: 20px 120px;
+    /* margin-top: 700px; */
+}
+.service__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .service__header__content p {
+    max-width: 600px;
+  }
+  .service-h2{
+    color: white;
+  }
+  .service-hr-b{
+    width: 13%;
+    border: 1.7px solid rgb(20, 113, 219);
+    position: relative;
+    left: 540;
+    bottom: -57;
+  }
+  .service-p{
+    color: white;
+  }
+  
+  .service__btn {
+    padding: 0.75rem 1rem;
+    outline: none;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid rgb(20, 113, 219);
+    background-color: rgb(20, 113, 219);
+    border-radius: 5px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .service__btn:hover {
+    color: #fff;
+    background-color: rgb(22, 22, 22);
+    border: 1px solid rgb(22, 22, 22);
+  }
+  
+  .service__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  .service__card {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .service__card span {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    background-color: var(--primary-color-light);
+    border-radius: 100%;
+    transition: 0.3s;
+  }
+  
+  .service__card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  
+  .service__card p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+  }
+  
+  .service__card a {
+    color: var(--primary-color);
+  }
+  
+  .service__card a:hover {
+    color: var(--primary-color-dark);
+  }
+  
+  .service__card:hover span {
+    color: var(--primary-color-light);
+    background-color: var(--primary-color);
+  }
+
 .parallax-overlay{
     position: relative;
     top: 0;
@@ -454,7 +647,7 @@ p.atext{
 .btn5:hover{
     background-color: #fff;
     color: rgb(20, 113, 219);
-    border: 3px rgb(20, 113, 219) solid;
+    border: 1px rgb(20, 113, 219) solid;
 }
 
 .health-big-text3{
