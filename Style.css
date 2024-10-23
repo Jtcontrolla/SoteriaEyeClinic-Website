@@ -628,7 +628,57 @@ h2 .stroke-b {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+}
+
+/* HMO Section */
+.swiper-container {
+    width: 100%; /* Full width of parent */
+    max-width: 80%; /* Limit width to prevent overflow */
+    margin: 0 auto; /* Center the swiper */
+    overflow: hidden; /* Hide any overflow */
+    padding: 20px;
+}
+
+.swiper-wrapper {
+    display: flex;
+    height: 150px !important;
+}
+
+.swiper-slide {
+    flex: 0 0 auto; /* Prevent resizing */
+    width: 150px; /* Match image size */
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.swiper-slide img {
+    width: 100%; /* Ensure image fits inside */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute !important;
+    top: 567% !important;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.swiper-button-next {
+    right: 10% !important;
+    color: #000 !important;
+}
+
+.swiper-button-prev {
+    left: 10% !important;
+    color: #000 !important;
+}
 
   /* parallax Section */
 

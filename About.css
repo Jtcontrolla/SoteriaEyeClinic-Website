@@ -370,6 +370,19 @@ h2 .stroke-b {
     justify-content: space-between;
     gap: 20px;
 }
+
+.about-content::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: .2;
+    background-image: url(./Assets/consult-form\ 2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
   
 .about-image img {
     max-width: 100%;
@@ -380,6 +393,24 @@ h2 .stroke-b {
 .about-description {
     max-width: 600px;
     margin-left: 30px;
+    border: dashed 2px #007bff;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    isolation: isolate;
+}
+
+.about-description::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: .2;
+    background-image: url(./Assets/consult-form\ 2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
 }
 
 .about-subtitle {
