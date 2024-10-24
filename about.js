@@ -49,3 +49,22 @@ animateCounter(optometristCounter, 15, 2000); // 15 Optometrist, 2 seconds durat
 animateCounter(staffCounter, 70, 80); // 70 staffs, 80 milliseconds duration
 animateCounter(opticiansCounter, 7, 2000); // 7 Opticians, 2 seconds duration
 animateCounter(branchCounter, 4, 2000) // 4 Branches, 2 seconds duration
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    slidesPerView: 5,  // Adjust as needed
+    spaceBetween: 10,  // Space between slides
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    effect: 'slide',
+    speed: 600,
+    autoplay: {
+      delay: 3000,  // Adjust autoplay delay as needed
+      disableOnInteraction: false,
+    },
+  });
+});
