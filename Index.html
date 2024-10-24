@@ -1,269 +1,241 @@
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Soteria Eye Clinc</title>
-    <!-- Css File-->
-    <link rel="stylesheet" href="./Style.css">
-    <link rel="icon" href="./Assets/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Soteria Eye Clinc</title>
+  <!-- Css File-->
+  <link rel="stylesheet" href="./Style.css">
+  <link rel="icon" href="./Assets/logo.png">
 
-    <!-- Compiled Icon pack-->
-    <link rel="icon" href="assets/images/favicon.ico">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Compiled materialized css-->
-    <!-- <link rel="stylesheet" href="./css/materialize.min.css"> -->
+  <!-- Compiled Icon pack-->
+  <link rel="icon" href="assets/images/favicon.ico">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Swiper Files   -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Compiled materialized css-->
+  <!-- <link rel="stylesheet" href="./css/materialize.min.css"> -->
 
-    <!-- googlefont Poppins-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <!-- googlefont Poppins-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+  <!-- ***** Preloader Start ***** -->
+  <div id="preloader">
+    <div class="jumper">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-    <!-- ***** Preloader End ***** -->
+  </div>
+  <!-- ***** Preloader End ***** -->
 
-    <!-- header Section -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="Index.html"><img src="./Assets/logo.png" alt=""></a>
+  <!-- header Section -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="Index.html"><img src="./Assets/logo.png" alt=""></a>
+      </div>
+      <ul class="links">
+        <li><a href="./Index.html">Home</a></li>
+        <li><a href="./Consultation.html">Consultation</a></li>
+        <li><a href="./HMO.html">HMO</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">More</a>
+            <div class="dropdown-content">
+              <a href="./About.html">About Us</a>
+              <a href="./Our Service.html">Our Services</a>
+              <a href="./Blog.html">Blog</a>
+              <a href="./Our Team.html">Our Team</a>
+              <a href="./Testimonial.html">Testimonials</a>
+              <a href="./Contact Us.html">Contact Us</a>
             </div>
-            <ul class="links">
-                <li><a href="./Index.html">Home</a></li>
-                <li><a href="./Consultation.html">Consultation</a></li>
-                <li><a href="./HMO.html">HMO</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">More</a>
-                    <div class="dropdown-content">
-                        <a href="./About.html">About Us</a>
-                        <a href="./Our Service.html">Our Services</a>
-                        <a href="./Blog.html">Blog</a>
-                        <a href="./Our Team.html">Our Team</a>
-                        <a href="./Testimonial.html">Testimonials</a>
-                        <a href="./Contact Us.html">Contact Us</a>
-                    </div>
-                </li>
-            </ul>
-            <a href="#" class="reg_btn">Register</a>
-            <div class="toggle_btn">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </div>
-        </nav>
-
-        <div class="dropdown_menu">
-            <li class="dropdown_list"><a href="./Index.html">Home</a></li>
-            <li class="dropdown_list"><a href="./About.html">About Us</a></li>
-            <li class="dropdown_list"><a href="./Our Service.html">Our Services</a></li>
-            <li class="dropdown_list"><a href="./Consultation.html">Consultation</a></li>
-            <li class="dropdown_list"><a href="./HMO.html">HMO</a></li>
-            <li class="dropdown_list"><a href="./Blog.html">Blog</a></li>
-            <li class="dropdown_list"><a href="./Our Team.html">Our Team</a></li>
-            <li class="dropdown_list"><a href="./Testimonial.html">Testimonials</a></li>
-            <li class="dropdown_list"><a href="./Contact Us.html">Contact Us</a></li>
-            <li><a href="./Register.html" class="reg_btn">Register</a></li>
+        </li>
+      </ul>
+        <a href="#" class="reg_btn">Register</a>
+        <div class="toggle_btn">
+          <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
+    </nav>
 
-        <div class="head-video">
+    <div class="dropdown_menu">
+      <li class="dropdown_list"><a href="./Index.html">Home</a></li>
+      <li class="dropdown_list"><a href="./About.html">About Us</a></li>
+      <li class="dropdown_list"><a href="./Our Service.html">Our Services</a></li>
+      <li class="dropdown_list"><a href="./Consultation.html">Consultation</a></li>
+      <li class="dropdown_list"><a href="./HMO.html">HMO</a></li>
+      <li class="dropdown_list"><a href="./Blog.html">Blog</a></li>
+      <li class="dropdown_list"><a href="./Our Team.html">Our Team</a></li>
+      <li class="dropdown_list"><a href="./Testimonial.html">Testimonials</a></li>
+      <li class="dropdown_list"><a href="./Contact Us.html">Contact Us</a></li>
+      <li><a href="./Register.html" class="reg_btn">Register</a></li>
+    </div>
 
-            <video src="Assets/img1 (3).mp4" class="video" autoplay muted loop>
-            </video>
-            <div class="head-text">
-                <h3 class="big-text">Your <span class="stroke">Vision,</span> <br> <span class="stroke">Our</span> Priority.</h3><br>
-                <p class="head-p">Expert eye care, unwavering commitiment. Exprience the best in opthaimology and optametry at Soteria Eye.</p>
-                <a href="" class="see">See the future clearly, today</a>
-            </div>
+    <div class="head-video">
+      <video src="Assets/img1 (3).mp4" class="video" autoplay muted loop></video>
+      <div class="head-text">
+        <h3 class="big-text">Your <span class="stroke">Vision,</span> <br> <span class="stroke">Our</span> Priority.</h3><br>
+        <p class="head-p">Expert eye care, unwavering commitiment. Exprience the best in opthaimology and optametry at Soteria Eye.</p>
+        <a href="" class="see">See the future clearly, today</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <hr class="hr-b">
+    <h2> Soteria <span class="stroke-b">Eye</span> clinic</h2>
+    <div class="about-all">
+      <div class="about-photo">
+        <img src="./Assets/about img 1.jpg" alt="" class="about-img1" width="295px">
+        <img src="./Assets/about img 2.jpg" alt="" class="about-img2" width="295px">
+        <img src="./Assets/about img 3.png" class="about-img3" width="240px">
+      </div>
+      <div class="about-text">
+        <h3 class="about-h">
+          About <span class="sp1">Us</span>
+        </h3>
+        <p>
+          Soteria Eye Clinic is a contemporary state of the art Optometric and Optical Care Clinic. Centrally located in Lagos Nigeria, with operations in strategic geographical zones in the south, at Delta and Akwa-Ibom. Soteria’s, optometrists and highly knowledgeable
+          staff are committed to providing quality eye examination, along with impeccable treatment and services. The expertise at Soteria Clinic offers top-grade eye care. Including choice designer frames, contact lenses and sunglasses. The
+          Clinic is committed to providing everything from thorough assessment to efficiency in treatment, coupled with overall great service.
+        </p>
+        <div class="vision">
+          <h3 class="about-h">
+            Our <span class="Sp1">Vision</span>
+          </h3>
+          <p>
+            To deliver affordable eye care services that combines <br> the best technology, numerical evidence from research, <br>to consequently align us, with the best clinical practices, <br> following each diagnosis.
+          </p>
+          <br><a href="About.html">Read More</a>
         </div>
-    </header>
-
-    <!-- About Section -->
-    <section class="about">
-        <hr class="hr-b">
-        <h2> Soteria <span class="stroke-b">Eye</span> clinic</h2>
-        <div class="about-all">
-            <div class="about-photo">
-                <img src="./Assets/about img 1.jpg" alt="" class="about-img1" width="295px">
-                <img src="./Assets/about img 2.jpg" alt="" class="about-img2" width="295px">
-                <img src="./Assets/about img 3.png" class="about-img3" width="240px">
-            </div>
-            <div class="about-text">
-                <h3 class="about-h">
-                    About <span class="sp1">Us</span>
-                </h3>
-                <p>
-                    Soteria Eye Clinic is a contemporary state of the art Optometric and Optical Care Clinic. Centrally located in Lagos Nigeria, with operations in strategic geographical zones in the south, at Delta and Akwa-Ibom. Soteria’s, optometrists and highly knowledgeable
-                    staff are committed to providing quality eye examination, along with impeccable treatment and services. The expertise at Soteria Clinic offers top-grade eye care. Including choice designer frames, contact lenses and sunglasses. The
-                    Clinic is committed to providing everything from thorough assessment to efficiency in treatment, coupled with overall great service.
-                </p>
-                <div class="vision">
-                    <h3 class="about-h">
-                        Our <span class="Sp1">Vision</span>
-                    </h3>
-                    <p>
-                        To deliver affordable eye care services that combines <br> the best technology, numerical evidence from research, <br>to consequently align us, with the best clinical practices, <br> following each diagnosis.
-                    </p>
-                    <br><a href="About.html">Read More</a>
-                </div>
-                <div class="brand">
-                    <h3 class="about-h">
-                        Our <span class="sp1">Brand</span>
-                    </h3>
-                    <p>
-                        Our brand is deliberate, erudite and conscientious. Our mission statement: ‘Your Total Eye Care, Our Responsibility’, reflects that we are resolute in the actualisation of our vision. As we create and deliver comprehensive optometry services, we carry
-                        through seamlessly on the following key elements: 
-                        <br> 1. Innovative Eye Care Services 
-                        <br> 2. Best Customer Care 
-                        <br> 3. Expertise 
-                        <br> 4. Excellence 
-                        <br> 5. Integrity
-                    </p>
-                </div>
-            </div>
+        <div class="brand">
+          <h3 class="about-h">
+            Our <span class="sp1">Brand</span>
+          </h3>
+          <p>
+            Our brand is deliberate, erudite and conscientious. Our mission statement: ‘Your Total Eye Care, Our Responsibility’, reflects that we are resolute in the actualisation of our vision. As we create and deliver comprehensive optometry services, we carry
+            through seamlessly on the following key elements: 
+            <br> 1. Innovative Eye Care Services 
+            <br> 2. Best Customer Care 
+            <br> 3. Expertise 
+            <br> 4. Excellence 
+            <br> 5. Integrity
+          </p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Our Services Section -->
-
-    <section class="section__container service__container" id="service">
-        <div class="service__header">
-          <div class="service__header__content">
-            <hr class="service-hr-b">
-            <h2 class="service-h2">Our <span class="stroke-b">Special</span> service</h2>
-            <p class="service-p">
-              Beyond simply providing medical care, our commitment lies in
-              delivering unparalleled service tailored to your unique needs.
-            </p>
-          </div>
-          <a href="./Our Service.html"><button class="service__btn">Ask A Service</button></a>
-        </div>
-        <div class="service__grid">
-          <div class="service__card">
-            <span><i class="ri-microscope-line"></i></span>
-            <h4>Laboratory Test</h4>
-            <p>
-              Accurate Diagnostics, Swift Results: Experience top-notch Laboratory
-              Testing at our facility.
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-          <div class="service__card">
-            <span><i class="ri-mental-health-line"></i></span>
-            <h4>Health Check</h4>
-            <p>
-              Our thorough assessments and expert evaluations help you stay
-              proactive about your health.
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-          <div class="service__card">
-            <span><i class="ri-hospital-line"></i></span>
-            <h4>General Dentistry</h4>
-            <p>
-              Experience comprehensive oral care with Dentistry. Trust us to keep
-              your smile healthy and bright.
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-          <div class="service__card">
-            <span><i class="ri-hospital-line"></i></span>
-            <h4>General Dentistry</h4>
-            <p>
-              Experience comprehensive oral care with Dentistry. Trust us to keep
-              your smile healthy and bright.
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-          <div class="service__card">
-            <span><i class="ri-hospital-line"></i></span>
-            <h4>General Dentistry</h4>
-            <p>
-              Experience comprehensive oral care with Dentistry. Trust us to keep
-              your smile healthy and bright.
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-          <div class="service__card">
-            <span><i class="ri-hospital-line"></i></span>
-            <h4>General Dentistry</h4>
-            <p>
-              Experience comprehensive oral care with Dentistry. Trust us to keep
-              your smile healthy and bright.
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-        </div>
-      </section>
+  <!-- Our Services Section -->
+  <section class="section__container service__container" id="service">
+    <div class="service__header">
+      <div class="service__header__content">
+        <hr class="service-hr-b">
+        <h2 class="service-h2">Our <span class="stroke-b">Special</span> service</h2>
+        <p class="service-p">
+          Beyond simply providing medical care, our commitment lies in
+          delivering unparalleled service tailored to your unique needs.
+        </p>
+      </div>
+      <a href="./Our Service.html"><button class="service__btn">Ask A Service</button></a>
+    </div>
+    <div class="service__grid">
+      <div class="service__card">
+        <span><i class="ri-microscope-line"></i></span>
+        <h4>Laboratory Test</h4>
+        <p>
+          Accurate Diagnostics, Swift Results: Experience top-notch Laboratory
+          Testing at our facility.
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-mental-health-line"></i></span>
+        <h4>Health Check</h4>
+        <p>
+          Our thorough assessments and expert evaluations help you stay
+          proactive about your health.
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-hospital-line"></i></span>
+        <h4>General Dentistry</h4>
+        <p>
+          Experience comprehensive oral care with Dentistry. Trust us to keep
+          your smile healthy and bright.
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-hospital-line"></i></span>
+        <h4>General Dentistry</h4>
+        <p>
+          Experience comprehensive oral care with Dentistry. Trust us to keep
+          your smile healthy and bright.
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-hospital-line"></i></span>
+        <h4>General Dentistry</h4>
+        <p>
+          Experience comprehensive oral care with Dentistry. Trust us to keep
+          your smile healthy and bright.
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-hospital-line"></i></span>
+        <h4>General Dentistry</h4>
+        <p>
+          Experience comprehensive oral care with Dentistry. Trust us to keep
+          your smile healthy and bright.
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+  </section>
       
   
 
-    <!-- HMO Section -->
-    <section class="testimonial">
-      <div class="swiper-container-2">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./Assets/04/New-frame-check--150x150.jpg" alt="" style="border-radius: 50%;" height="50px" width="50px">
-            <p class="test-text">I am so happy with my new frames from Soteria Eye Clinic</p>
-          </div>
-
-          <div class="swiper-slide">
-            <img src="./Assets/05/Review--150x150.jpg" alt=""  style="border-radius: 50%;">
-            <p class="test-text">Yeah,  like I like the glasses that was made that was made for me. 
-              Like it's actually amazing. Like I like the technology and I feel happy. So I recommend Soteria</p>
-          </div>
-
-          <div class="swiper-slide">
-            <img src="./Assets/04/WhatsApp-Image-2023-04-26-at-6.21.00-PM-150x150.jpg" alt="" style="border-radius: 50%;">
-            <p class="test-text">I've been coming up about a year and a half, and the service has been good. I have referred quite a lot of my friends. I think I brought another friend the last time I came in, 
-              and I would be happy So to even bring my dad so he can get the same kind of service, actually.</p>
-          </div>
-
-          <div class="swiper-slide">
-            <img src="./Assets/04/nifaa-davis-soteria-150x150.jpg" alt="" style="border-radius: 50%;">
-            <p class="test-text">Awesome experience with them,i had a great time in the clinic, friendly staffs</p>
-          </div>
-          
-        </div>
-      </div>
-    </section>
+  <!-- Testimonial Section -->
+  <section class="testimonial">
+      
+  </section>
 
     
-    <!-- Para section -->
-    <div class="parallax">
-        <div class="parallax-overlay">
-            <div class="flex1">
-                <h4 class="sot">Book A Consultation</h4>
-                <p class="p3">We offer free eye evaluation in all our branches. This service is peculiar to Soteria Eye Clinic. Subsequently, we guarantee continuity and longevity of patient-clinic relations: via maintenance services, to all in our patient base.</p>
-            </div>
-            <a href="#" class="btn4">Book Now</a>
-        </div>
-    </div>
-
- <!-- HMO Section -->
- <section>
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="./Assets/05/reliance-hmo-1-300x197.jpg" alt="" /></div>
-      <div class="swiper-slide"><img src="./Assets/05/century-medicaid-300x197.jpg" alt="" /></div>
-      <div class="swiper-slide"><img src="./Assets/05/Green-bay-300x197.jpg" alt="" /></div>
-      <div class="swiper-slide"><img src="./Assets/05/greenfield-300x197.jpg" alt="" /></div>
-      <div class="swiper-slide"><img src="./Assets/05/ZENITH-300x197.jpg" alt="" /></div>
-      <div class="swiper-slide"><img src="./Assets/05/life-action-300x197.jpg" alt="" /></div>
-      <div class="swiper-slide"><img src="./Assets/05/RODING-300x197.jpg" alt="" /></div>
-      <div class="swiper-slide"><img src="./Assets/05/ng-mansar-300x197.jpg" alt="" /></div>
-      <div class="swiper-slide"><img src="./Assets/05/hallmark-300x197.jpg" alt="" /></div>
-      <div class="swiper-slide"><img src="./Assets/05/health-assure-1-300x197.jpg" alt="" /></div>
+  <!-- Para section -->
+  <div class="parallax">
+    <div class="parallax-overlay">
+      <div class="flex1">
+        <h4 class="sot">Book A Consultation</h4>
+        <p class="p3">We offer free eye evaluation in all our branches. This service is peculiar to Soteria Eye Clinic. Subsequently, we guarantee continuity and longevity of patient-clinic relations: via maintenance services, to all in our patient base.</p>
+      </div>
+      <a href="#" class="btn4">Book Now</a>
     </div>
   </div>
-</section>
+
+  <!-- HMO Section -->
+  <section>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./Assets/05/reliance-hmo-1-300x197.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./Assets/05/century-medicaid-300x197.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./Assets/05/Green-bay-300x197.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./Assets/05/greenfield-300x197.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./Assets/05/ZENITH-300x197.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./Assets/05/life-action-300x197.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./Assets/05/RODING-300x197.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./Assets/05/ng-mansar-300x197.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./Assets/05/hallmark-300x197.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./Assets/05/health-assure-1-300x197.jpg" alt="" /></div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -276,78 +248,77 @@
 
 
 
-    <!-- footer Section -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                  <div class="col" id="company">
-                    <a href="./Index.html"><img src="./Assets/logo.png" alt="" class="logo"></a>
-                      <p>
-                        Soteria Eye Clinic is a contemporary state-of-the-art Optometric and Optical Care Clinic. Centrally located in Lagos Nigeria, with operations in strategic geographical zones in the south, at Delta and Akwa-Ibom.
-                      </p>
-                      <div class="social">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                      </div>
-                  </div>
+  <!-- footer Section -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <a href="./Index.html"><img src="./Assets/logo.png" alt="" class="logo"></a>
+          <p>
+            Soteria Eye Clinic is a contemporary state-of-the-art Optometric and Optical Care Clinic. Centrally located in Lagos Nigeria, with operations in strategic geographical zones in the south, at Delta and Akwa-Ibom.
+          </p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
 
+        <div class="col" id="services">
+          <h3>Quick Links</h3>
+          <div class="links">
+            <a href="./About.html">About Us</a>
+            <a href="./HMO.html">HMO</a>
+            <a href="./Consultation.html">Consultation</a>
+            <a href="./Our Service.html">Our Services</a>
+            <a href="./Our Team.html">Our Team</a>
+            <a href="./Blog.html">Blog</a>
+            <a href="./Testimonial.html">Testimonial</a>
+            <a href="./Contact Us.html">Contact Us</a>
+          </div>
+        </div>
 
-                  <div class="col" id="services">
-                     <h3>Quick Links</h3>
-                     <div class="links">
-                        <a href="./About.html">About Us</a>
-                        <a href="./HMO.html">HMO</a>
-                        <a href="./Consultation.html">Consultation</a>
-                        <a href="./Our Service.html">Our Services</a>
-                        <a href="./Our Team.html">Our Team</a>
-                        <a href="./Blog.html">Blog</a>
-                        <a href="./Testimonial.html">Testimonial</a>
-                        <a href="./Contact Us.html">Contact Us</a>
-                     </div>
-                  </div>
-
-                  <div class="col" id="useful-links">
-                     <h3>Our Location 📍</h3>
-                     <div class="links">
-                        <h4>LAGOS OFFICE</h4>
-                        <p>
-                         Atlantic Shopping & Ent. Centre, Chevron Drive, Lekki, Lagos Nigeria
-                        </p>
-                        <h4>CORPORATE OFFICE</h4>
-                        <p>
-                            Shop 53A Delta Mall, Shoprite, Effurun Delta State, Nigeria
-                        </p>
-                        <h4>UYO OFFICE</h4>
-                        <p>
-                            Tropicana Mall Shop GBA Udo-Udoma Avenue Uyo, Nigeria.
-                        </p>
-                     </div>
-                  </div>
+        <div class="col" id="useful-links">
+          <h3>Our Location 📍</h3>
+            <div class="links">
+              <h4>LAGOS OFFICE</h4>
+              <p>
+                Atlantic Shopping & Ent. Centre, Chevron Drive, Lekki, Lagos Nigeria
+              </p>
+              <h4>CORPORATE OFFICE</h4>
+              <p>
+                Shop 53A Delta Mall, Shoprite, Effurun Delta State, Nigeria
+              </p>
+              <h4>UYO OFFICE</h4>
+              <p>
+                Tropicana Mall Shop GBA Udo-Udoma Avenue Uyo, Nigeria.
+              </p>
+            </div>
+        </div>
 
                   <div class="col" id="contact">
-                      <h3>Contact</h3>
-                      <h4>HEAD OFFICE</h4>
-                      <br>
-                      <div class="contact-details">
-                         <i class="fa fa-location"></i>
-                         <p>
-                            28 Kotie Street Off Okumagba Warri
-                            Delta State,
-                            Nigeria
-                        </p>
-                      </div>
-                      <div class="contact-details">
-                         <i class="fa fa-phone"></i>
-                         <p>+2348063363506</p>
-                      </div>
-                      <div class="contact-details">
-                        <i class="fa fa-inbox"></i>
-                        <p>
-                            info@soteriaeyeclinic.com
-                        </p>
+                    <h3>Contact</h3>
+                    <h4>HEAD OFFICE</h4>
+                    <br>
+                    <div class="contact-details">
+                      <i class="fa fa-location"></i>
+                      <p>
+                        28 Kotie Street Off Okumagba Warri
+                        Delta State,
+                        Nigeria
+                      </p>
+                    </div>
+                    <div class="contact-details">
+                      <i class="fa fa-phone"></i>
+                      <p>+2348063363506</p>
+                    </div>
+                    <div class="contact-details">
+                      <i class="fa fa-inbox"></i>
+                      <p>
+                        info@soteriaeyeclinic.com
+                      </p>
                      </div>
                   </div>
             </div>

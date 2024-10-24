@@ -27,22 +27,20 @@ document.addEventListener('DOMContentLoaded', function () {
         disableOnInteraction: false,
       },
     });
-});
 
-document.addEventListener('DOMContentLoaded', function () {
-  const swiper = new Swiper('.swiper-container-2', {
-    loop: true,
-    slidesPerView: 1,  // Adjust as needed
-    spaceBetween: 0,  // Space between slides
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    effect: 'fade',
-    speed: 600,
-    autoplay: {
-      delay: 3000,  // Adjust autoplay delay as needed
-      disableOnInteraction: false,
-    },
-  });
+    // Testimonal Swiper
+    const testimonialSwiper = new Swiper('.testimonial-swiper', {
+      direction: 'horizontal',
+      loop: true,
+      effect: 'fade',
+      fadeEffect: {
+        crossfade: true
+      },
+      slidesPerView: 1,
+      spaceBetween: 10,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
 });

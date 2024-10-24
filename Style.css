@@ -539,44 +539,8 @@ h2 .stroke-b {
     background-color: var(--primary-color);
   }
 
-  .swiper-container-2 {
-    width: 100%;
-    height: 150px; /* Adjust as needed */
-  }
-  .testimonial {
-    margin-bottom: 50px;
-  }
-  .swiper-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 20px !important;
-  }
-  
-  .swiper-slide img {
-    width: 250px !important;
-    height: 250px !important;
-    /* object-fit: cover; */
-    margin-bottom: 20px;
-  }
-  
-  .test-text {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-  
-  .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    background-color: #000;
-    opacity: 0.5;
-  }
-  
-  .swiper-pagination-bullet-active {
-    opacity: 1;
-  }
+/* Testimonal Section */
+
 
 /* HMO Section */
 .swiper-container {
