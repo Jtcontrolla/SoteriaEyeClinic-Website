@@ -27,20 +27,19 @@ document.addEventListener('DOMContentLoaded', function () {
         disableOnInteraction: false,
       },
     });
-
-    // Testimonal Swiper
-    const testimonialSwiper = new Swiper('.testimonial-swiper', {
-      direction: 'horizontal',
-      loop: true,
-      effect: 'fade',
-      fadeEffect: {
-        crossfade: true
-      },
-      slidesPerView: 1,
-      spaceBetween: 10,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-    });
 });
+
+// Testimonial
+const testimonials = document.querySelectorAll('.testimonial');
+let currentTestimonial = 0;
+
+function showNextTestimonial() {
+  // Hide the current testimonial
+  testimonials[currentTestimonial].classList.remove('active');
+  // Move to the next testimonial (or loop back to the first)
+  currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+  // Show the next testimonial
+  testimonials[currentTestimonial].classList.add('active');
+}
+
+setInterval(showNextTestimonial, 5000);

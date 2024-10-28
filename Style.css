@@ -540,7 +540,70 @@ h2 .stroke-b {
   }
 
 /* Testimonal Section */
+.testimonials {
+    text-align: center;
+    padding: 50px 0;
+    overflow: hidden;
+    position: relative;
+    isolation: isolate;
+}
 
+.testimonial-subtitle h2 {
+    color: black;
+}
+
+.testimonials::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: .3;
+    background-image: url(./Assets/04/bg-ii-scaled.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.testimonial-container {
+    position: relative;
+    /* max-width: 600px; */
+    height: 200px;
+    margin: auto;
+    margin-bottom: 70px;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: flex-start;
+}
+
+.testimonial {
+    position: absolute;
+    top: -10;
+    left: 450;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    visibility: hidden;
+    max-width: 600px;
+}
+
+.testimonial.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.testimonial img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.testimonial p {
+    font-size: 16px;
+    font-weight: bold;
+}
 
 /* HMO Section */
 .swiper-container {
