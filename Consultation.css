@@ -219,6 +219,7 @@ li.dropdown {
     border-radius: 15px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
 }
 
 .dropdown_menu.open {
@@ -236,9 +237,10 @@ li.dropdown {
 }
 
 .dropdown_menu .reg_btn {
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: center;
+    margin: 0 20%;
 }
 
 .reg_btn {
@@ -313,6 +315,53 @@ video {
     margin-top: 40px;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) { /* Tablet view */
+    .head-text {
+        top: 300px; /* Adjusted for smaller screens */
+        right: 20px; /* Adjusted for smaller screens */
+        width: 80%; /* Increased width for better visibility */
+        padding: 10px; /* Reduced padding */
+    }
+
+    .big-text {
+        font-size: 50px; /* Reduced font size */
+        line-height: 50px; /* Adjusted line height */
+    }
+
+    .head-p {
+        font-size: 16px; /* Slightly smaller font size */
+    }
+
+    .see {
+        padding: 5px 10px; /* Adjusted padding */
+        margin-top: 30px; /* Reduced margin */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile view */
+    .head-text {
+        top: 300px; /* Further adjusted for mobile */
+        right: 10px; /* Further adjusted for mobile */
+        width: 90%; /* Full width for mobile */
+        padding: 8px; /* Reduced padding */
+    }
+
+    .big-text {
+        font-size: 30px; /* Much smaller font size */
+        line-height: 30px; /* Adjusted line height */
+    }
+
+    .head-p {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .see {
+        padding: 4px 8px; /* Adjusted padding */
+        margin-top: 20px; /* Reduced margin */
+    }
+}
+
 @media(max-width: 768px) {
     .navbar .links,
     .navbar .reg_btn {
@@ -351,6 +400,36 @@ video {
     font-size: 14px;
     text-align: center;
     /* margin-bottom: 30px; */
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+    .appointment {
+        padding: 30px; /* Reduce padding for tablets */
+    }
+
+    .appointment h3 {
+        font-size: 40px; /* Smaller font size for h3 */
+    }
+
+    .appointment p {
+        font-size: 12px; /* Slightly smaller font size for paragraphs */
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+    .appointment {
+        padding: 20px; /* Further reduce padding for mobile */
+    }
+
+    .appointment h3 {
+        font-size: 30px; /* Smaller font size for h3 */
+    }
+
+    .appointment p {
+        font-size: 10px; /* Smaller font size for paragraphs */
+    }
 }
 
 .glasses {
@@ -442,6 +521,55 @@ video {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* Tablet view */
+    .glasses,
+    .chart,
+    .lens,
+    .vis-imp-machine {
+        width: 80px; /* Reduced size for tablets */
+        top: 50px; /* Adjusted position */
+        display: none;
+    }
+
+    .chart {
+        right: -400px; /* Adjusted position */
+    }
+
+    .lens {
+        top: 800px; /* Adjusted position */
+        right: -400px; /* Adjusted position */
+    }
+
+    .vis-imp-machine {
+        right: -400px; /* Adjusted position */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile view */
+    .glasses,
+    .chart,
+    .lens,
+    .vis-imp-machine {
+        width: 60px; /* Further reduced size for mobile */
+        top: 30px; /* Further adjusted position */
+        display: none;
+    }
+
+    .chart {
+        right: -200px; /* Further adjusted position */
+    }
+
+    .lens {
+        top: 600px; /* Further adjusted position */
+        right: -200px; /* Further adjusted position */
+    }
+
+    .vis-imp-machine {
+        right: -200px; /* Further adjusted position */
     }
 }
 
@@ -603,6 +731,49 @@ video {
     color: #fff;
     transform: translateY(-5px);
     transition: 0.7s ease;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+    .parallax {
+        height: 300px; /* Reduce height for tablets */
+        padding: 20px 60px; /* Adjust padding for tablets */
+    }
+
+    .sot {
+        font-size: 35px; /* Smaller font size for heading */
+    }
+
+    .p3 {
+        font-size: 18px; /* Smaller font size for paragraph */
+    }
+
+    .btn4 {
+        margin-left: 0; /* Center the button */
+        display: block; /* Stack the button */
+        margin: 10px auto; /* Center the button with auto margins */
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+    .parallax {
+        height: 200px; /* Further reduce height for mobile */
+        padding: 10px 20px; /* Adjust padding for mobile */
+    }
+
+    .sot {
+        font-size: 28px; /* Smaller font size for heading */
+    }
+
+    .p3 {
+        font-size: 16px; /* Smaller font size for paragraph */
+    }
+
+    .btn4 {
+        padding: 10px; /* Adjust padding for the button */
+        font-size: 14px; /* Smaller font size for button */
+    }
 }
 
 /* HMO Section */

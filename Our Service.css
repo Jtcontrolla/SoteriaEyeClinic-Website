@@ -224,6 +224,7 @@ li.dropdown {
     border-radius: 15px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
 }
 
 .dropdown_menu.open {
@@ -241,9 +242,10 @@ li.dropdown {
 }
 
 .dropdown_menu .reg_btn {
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: center;
+    margin: 0 20%;
 }
 
 .reg_btn {
@@ -389,8 +391,9 @@ video {
     color: white;
     padding-top: 100px;
     margin-bottom: 50px;
-    left: 30;
-    
+    /* left: 30; */
+    text-align: center;
+    margin-right: 0;
 }
 
 .health-btn{
@@ -589,7 +592,6 @@ h2 .stroke-b {
     transform: translateY(-5px);
     transition: 0.7s ease;
 }
-
 
 .wrapper{
     display: flex;

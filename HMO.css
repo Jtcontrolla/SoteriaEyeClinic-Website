@@ -217,6 +217,7 @@ li.dropdown {
     border-radius: 15px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
 }
 
 .dropdown_menu.open {
@@ -234,9 +235,10 @@ li.dropdown {
 }
 
 .dropdown_menu .reg_btn {
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: center;
+    margin: 0 20%;
 }
 
 .reg_btn {

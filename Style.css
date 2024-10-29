@@ -235,9 +235,10 @@ li.dropdown {
 }
 
 .dropdown_menu .reg_btn {
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: center;
+    margin: 0 20%;
 }
 
 .reg_btn {
@@ -245,7 +246,6 @@ li.dropdown {
     color: #fff;
     padding: 5px 14px;
     margin: 15px;
-    margin-right: 100px;
     border: none;
     outline: none;
     border-radius: 20px;
@@ -278,12 +278,32 @@ video {
     z-index: 1;
     color: black;
     position: absolute;
-    top: 250;
-    right: 110;
-    backdrop-filter: blur( 5px);
-    padding: 15px;
-    border-radius: 15px;
-    width: 40%;
+    top: 35%;  /* Use percentage for vertical positioning */
+    right: 10%; /* Use percentage for horizontal positioning */
+    backdrop-filter: blur(5px);
+    padding: 1rem; /* Use rem for padding */
+    border-radius: 1rem; /* Use rem for border-radius */
+    width: 40%; /* This can remain as is, or adjust in media queries */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .head-text {
+        width: 80%; /* Increase width on smaller screens */
+        padding: 0.8rem; /* Adjust padding */
+        top: 25%; /* Adjust top position */
+        right: 10%; /* Adjust right position */
+    }
+}
+
+@media (max-width: 480px) {
+    .head-text {
+        width: 90%; /* Further increase width on very small screens */
+        padding: 0.5rem; /* Further adjust padding */
+        top: 10%; /* Adjust top position */
+        right: 5%; /* Adjust right position */
+        font-size: 0.9rem; /* Adjust font size for better readability */
+    }
 }
 
 .big-text {
