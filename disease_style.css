@@ -224,6 +224,7 @@ li.dropdown {
     border-radius: 15px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
 }
 
 .dropdown_menu.open {
@@ -241,9 +242,10 @@ li.dropdown {
 }
 
 .dropdown_menu .reg_btn {
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: center;
+    margin: 0 20%;
 }
 
 .reg_btn {
@@ -269,6 +271,115 @@ li.dropdown {
 
 .reg_btn:active {
     scale: 0.95;
+}
+
+@media(max-width: 768px) {
+    .navbar .links,
+    .navbar .reg_btn {
+        display: none;
+    }
+    .navbar .toggle_btn {
+        display: block;
+        color: #fff;
+    }
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+.head-video {
+    width: 100%;
+    height: 200vh;
+}
+
+video {
+    width: 100%;
+}
+
+.head-text {
+    z-index: 1;
+    color: black;
+    position: absolute;
+    top: 250;
+    right: 110;
+    backdrop-filter: blur( 5px);
+    padding: 15px;
+    border-radius: 15px;
+    width: 40%;
+}
+
+.big-text {
+    color: #fff;
+    font-size: 70px;
+    line-height: 70px;
+}
+
+.big-text .stroke {
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.head-p {
+    color: #131212;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.see {
+    padding: 6px 15px;
+    color: rgb(107, 44, 44);
+    border-radius: 20px;
+    border: 1px outset;
+    margin-top: 40px;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .head-text {
+        top: 200px;
+        right: 50px;
+        width: 60%;
+    }
+
+    .big-text {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .head-p {
+        font-size: 16px;
+    }
+
+    .see {
+        padding: 5px 10px;
+        margin-top: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .head-text {
+        top: 200px;
+        right: 20px;
+        width: 80%;
+    }
+
+    .big-text {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .head-p {
+        font-size: 14px;
+    }
+
+    .see {
+        padding: 4px 8px;
+        margin-top: 20px;
+    }
 }
 
 .head-video {
@@ -328,6 +439,52 @@ video {
     }
     .dropdown_menu {
         display: block;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .head-text {
+        top: 200px;
+        right: 50px;
+        width: 60%;
+    }
+
+    .big-text {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .head-p {
+        font-size: 16px;
+    }
+
+    .see {
+        padding: 5px 10px;
+        margin-top: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .head-text {
+        top: 200px;
+        right: 20px;
+        width: 80%;
+    }
+
+    .big-text {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .head-p {
+        font-size: 14px;
+    }
+
+    .see {
+        padding: 4px 8px;
+        margin-top: 20px;
     }
 }
 
@@ -577,6 +734,48 @@ video {
     transition: 0.7s ease;
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .parallax {
+        height: 300px; /* Reduce height for smaller screens */
+        padding: 10px 60px; /* Adjust padding */
+    }
+
+    .parallax-overlay {
+        flex-direction: column; /* Stack content vertically */
+        padding: 10px; /* Add some padding */
+    }
+
+    .sot {
+        font-size: 35px; /* Reduce font size */
+    }
+
+    .p3 {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .btn4 {
+        margin-left: 0; /* Remove margin for smaller screens */
+        margin-top: 10px; /* Add top margin */
+        /* width: 100%; Make button full width */
+    }
+}
+
+@media (max-width: 480px) {
+    .parallax {
+        height: 250px; /* Further reduce height for very small screens */
+        padding: 10px 20px; /* Further adjust padding */
+    }
+
+    .sot {
+        font-size: 28px; /* Further reduce font size */
+    }
+
+    .p3 {
+        font-size: 16px; /* Further reduce font size */
+    }
+}
+
 
 .wrapper{
     display: flex;
@@ -694,9 +893,6 @@ hr{
 .flex-txt{
     margin-top: -20px;
 }
-* {
-    /* border: red solid 1px; */
-}
 
 .health-bttn{
     color: #fff;
@@ -713,6 +909,7 @@ hr{
     width: 267px;
     padding: 6px 10px;
     margin-top: 10px;
+    border-radius: 20px;
 }
 
 .request-button:hover{
@@ -811,6 +1008,100 @@ hr{
     list-style: circle;
     text-decoration: solid;
     margin-left: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* Tablet */
+    .health-big-text3 {
+        font-size: 24px; /* Smaller font size for tablets */
+        padding-top: 5px; /* Adjust padding */
+    }
+
+    .health-para {
+        padding: 0 20px; /* Reduced padding */
+        flex-direction: column;
+    }
+
+    .health-txt {
+        font-size: 30px;
+    }
+
+    .health-img4 {
+        height: 250px; /* Smaller image height */
+        width: 100%; /* Full width */
+        padding: 20px 5px; /* Adjust padding */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 15px;
+    }
+
+    .request-button {
+        width: 50%; /* Full width button */
+        padding: 10px; /* Adjust padding */
+        font-size: 18px; /* Smaller font size */
+    }
+
+    .wrapper4 {
+        margin: 20px 20px; /* Adjust margins */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .health-details4 {
+        max-width: 100%; /* Full width */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .health-left {
+        width: 100%; /* Full width */
+    }
+
+    .health-flex4 {
+        flex-direction: column; /* Stack items vertically */
+        padding: 0 20px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile */
+    .health-big-text3 {
+        font-size: 20px; /* Even smaller font size for mobile */
+    }
+
+    .health-para {
+        padding: 0 10px; /* Further reduced padding */
+        flex-direction: column;
+    }
+
+    .health-img4 {
+        height: 200px; /* Smaller image height */
+        padding: 10px 5px; /* Adjust padding */
+    }
+
+    .request-button {
+        font-size: 16px; /* Smaller font size */
+        padding: 8px; /* Adjust padding */
+    }
+
+    .wrapper4 {
+        margin: 10px; /* Adjust margins */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .health-details4 {
+        max-width: 100%; /* Full width */
+    }
+
+    .health-left {
+        width: 100%; /* Full width */
+    }
+
+    .health-flex4 {
+        flex-direction: column; /* Stack items vertically */
+        padding: 0 10px; /* Adjust padding */
+    }
+
+    .health-left li,
+    .health-details4 li {
+        margin-left: 10px; /* Reduce margin for list items */
+    }
 }
 
 /* HMO Section */

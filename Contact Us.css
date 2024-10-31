@@ -580,46 +580,45 @@ button:hover {
     transition: 0.7s ease;
 }
 
-/* Responsive styles for tablets */
+/* Media Queries */
 @media (max-width: 768px) {
     .parallax {
-        height: 300px; /* Reduce height for tablets */
-        padding: 20px 60px; /* Adjust padding for tablets */
+        height: 300px; /* Reduce height for smaller screens */
+        padding: 10px 60px; /* Adjust padding */
+    }
+
+    .parallax-overlay {
+        flex-direction: column; /* Stack content vertically */
+        padding: 10px; /* Add some padding */
     }
 
     .sot {
-        font-size: 35px; /* Smaller font size for heading */
+        font-size: 35px; /* Reduce font size */
     }
 
     .p3 {
-        font-size: 18px; /* Smaller font size for paragraph */
+        font-size: 18px; /* Reduce font size */
     }
 
     .btn4 {
-        margin-left: 0; /* Center the button */
-        display: block; /* Stack the button */
-        margin: 10px auto; /* Center the button with auto margins */
+        margin-left: 0; /* Remove margin for smaller screens */
+        margin-top: 10px; /* Add top margin */
+        /* width: 100%; Make button full width */
     }
 }
 
-/* Responsive styles for mobile devices */
 @media (max-width: 480px) {
     .parallax {
-        height: 200px; /* Further reduce height for mobile */
-        padding: 10px 20px; /* Adjust padding for mobile */
+        height: 250px; /* Further reduce height for very small screens */
+        padding: 10px 20px; /* Further adjust padding */
     }
 
     .sot {
-        font-size: 28px; /* Smaller font size for heading */
+        font-size: 28px; /* Further reduce font size */
     }
 
     .p3 {
-        font-size: 16px; /* Smaller font size for paragraph */
-    }
-
-    .btn4 {
-        padding: 10px; /* Adjust padding for the button */
-        font-size: 14px; /* Smaller font size for button */
+        font-size: 16px; /* Further reduce font size */
     }
 }
 

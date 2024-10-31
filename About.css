@@ -267,6 +267,21 @@ li.dropdown {
     scale: 0.95;
 }
 
+@media(max-width: 768px) {
+    .navbar .links,
+    .navbar .reg_btn {
+        display: none;
+    }
+    .navbar .toggle_btn {
+        display: block;
+    }
+    .dropdown_menu {
+        display: block;
+        z-index: 2;
+        width: 75vw;
+    }
+}
+
 .head-video {
     width: 100%;
     height: 200vh;
@@ -314,18 +329,59 @@ video {
     margin-top: 40px;
 }
 
-@media(max-width: 768px) {
-    .navbar .links,
-    .navbar .reg_btn {
+/* Media Query for tablets and smaller screens */
+@media (max-width: 768px) {
+    .hr-b {
         display: none;
     }
-    .navbar .toggle_btn {
-        display: block;
+
+    .head-text {
+        top: 250px; /* Adjust top position */
+        right: 20px; /* Adjust right position */
+        width: 80%; /* Increase width for smaller screens */
+        padding: 10px; /* Reduce padding */
     }
-    .dropdown_menu {
-        display: block;
-        z-index: 2;
-        width: 75vw;
+
+    .big-text {
+        font-size: 50px; /* Reduce font size */
+        line-height: 50px; /* Adjust line height */
+    }
+
+    .head-p {
+        font-size: 16px; /* Reduce paragraph font size */
+    }
+
+    .see {
+        padding: 4px 10px; /* Adjust button padding */
+        margin-top: 20px; /* Reduce margin top */
+    }
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 480px) {
+    .hr-b {
+        display: none;
+    }
+
+    .head-text {
+        top: 200px; /* Further adjust top position */
+        right: 10px; /* Further adjust right position */
+        width: 90%; /* Further increase width for mobile */
+        padding: 5px; /* Further reduce padding */
+    }
+
+    .big-text {
+        font-size: 30px; /* Reduce font size for mobile */
+        line-height: 30px; /* Adjust line height for mobile */
+    }
+
+    .head-p {
+        font-size: 14px; /* Further reduce paragraph font size */
+    }
+
+    .see {
+        padding: 3px 8px; /* Adjust button padding for mobile */
+        margin-top: 10px; /* Reduce margin top for mobile */
     }
 }
 
@@ -437,6 +493,10 @@ h2 .stroke-b {
         text-align: center;
     }
 
+    .about-description {
+        margin-left: 0%;
+    }
+
     .about-text {
         text-align: justify;
     }
@@ -480,6 +540,46 @@ h2 .stroke-b {
 
 .features p {
     text-align: justify;
+}
+
+/* Media Query for tablets */
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr; /* Stack items in one column */
+        margin: 10px; /* Adjust margin */
+    }
+
+    .features h3 {
+        font-size: 20px; /* Reduce heading size */
+    }
+
+    .features p {
+        font-size: 16px; /* Reduce paragraph size */
+    }
+
+    .feature-item-up, .feature-item-down {
+        padding: 15px; /* Reduce padding */
+    }
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 480px) {
+    .features {
+        gap: 10px; /* Reduce gap between items */
+        margin: 15px; /* Further reduce margin */
+    }
+
+    .features h3 {
+        font-size: 18px; /* Further reduce heading size */
+    }
+
+    .features p {
+        font-size: 14px; /* Further reduce paragraph size */
+    }
+
+    .feature-item-up, .feature-item-down {
+        padding: 10px; /* Further reduce padding */
+    }
 }
 
 .counter-section {
@@ -645,6 +745,55 @@ h2 .stroke-b {
     opacity: 1;
 }
 
+/* Media Query for tablets */
+@media (max-width: 768px) {
+    .team h2 {
+        font-size: 30px;
+        text-align: center;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    .overlay {
+        padding: 25px; /* Reduce padding */
+    }
+
+    .overlay h3 {
+        font-size: 20px; /* Reduce heading size */
+    }
+
+    .overlay p {
+        font-size: 16px; /* Reduce paragraph size */
+    }
+
+    .overlay li {
+        font-size: 16px; /* Reduce list item size */
+    }
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 480px) {
+    .overlay {
+        padding: 20px; /* Further reduce padding */
+    }
+
+    .overlay h3 {
+        font-size: 18px; /* Further reduce heading size */
+    }
+
+    .overlay p {
+        font-size: 14px; /* Further reduce paragraph size */
+    }
+
+    .overlay li {
+        font-size: 14px; /* Further reduce list item size */
+    }
+
+    .image-container.active img {
+        transform: scale(1.05); /* Slightly reduce scale effect for mobile */
+    }
+}
+
 /* parallax section */
 .parallax{
     background-image: url(Assets/img1\ \(4\).jpg);
@@ -716,6 +865,47 @@ h2 .stroke-b {
     transition: 0.7s ease;
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .parallax {
+        height: 300px; /* Reduce height for smaller screens */
+        padding: 10px 60px; /* Adjust padding */
+    }
+
+    .parallax-overlay {
+        flex-direction: column; /* Stack content vertically */
+        padding: 10px; /* Add some padding */
+    }
+
+    .sot {
+        font-size: 35px; /* Reduce font size */
+    }
+
+    .p3 {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .btn4 {
+        margin-left: 0; /* Remove margin for smaller screens */
+        margin-top: 10px; /* Add top margin */
+        /* width: 100%; Make button full width */
+    }
+}
+
+@media (max-width: 480px) {
+    .parallax {
+        height: 250px; /* Further reduce height for very small screens */
+        padding: 10px 20px; /* Further adjust padding */
+    }
+
+    .sot {
+        font-size: 28px; /* Further reduce font size */
+    }
+
+    .p3 {
+        font-size: 16px; /* Further reduce font size */
+    }
+}
 
 /* HMO Section */
 .swiper-container {

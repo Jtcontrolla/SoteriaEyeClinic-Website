@@ -104,6 +104,8 @@ body {
 
 header {
     background-color: whitesmoke;
+    background-image: url(./Assets/04/about-us-iii-scaled.jpg);
+    background-size: cover;
     height: 118vh;
     width: 100%;
 }
@@ -153,7 +155,7 @@ a {
 
 .links>li>a {
     text-decoration: none;
-    color: #fff;
+    color: black;
     font-size: 15px;
     border-radius: 20px;
     border: 1px outset #ccc;
@@ -188,7 +190,7 @@ li.dropdown {
 }
 
 .dropdown-content a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     display: block;
     text-align: center;
@@ -265,6 +267,19 @@ li.dropdown {
     scale: 0.95;
 }
 
+@media(max-width: 768px) {
+    .navbar .links,
+    .navbar .reg_btn {
+        display: none;
+    }
+    .navbar .toggle_btn {
+        display: block;
+    }
+    .dropdown_menu {
+        display: block;
+    }
+}
+
 .head-video {
     width: 100%;
     height: 200vh;
@@ -278,36 +293,16 @@ video {
     z-index: 1;
     color: black;
     position: absolute;
-    top: 35%;  /* Use percentage for vertical positioning */
-    right: 10%; /* Use percentage for horizontal positioning */
-    backdrop-filter: blur(5px);
-    padding: 1rem; /* Use rem for padding */
-    border-radius: 1rem; /* Use rem for border-radius */
-    width: 40%; /* This can remain as is, or adjust in media queries */
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .head-text {
-        width: 80%; /* Increase width on smaller screens */
-        padding: 0.8rem; /* Adjust padding */
-        top: 25%; /* Adjust top position */
-        right: 10%; /* Adjust right position */
-    }
-}
-
-@media (max-width: 480px) {
-    .head-text {
-        width: 90%; /* Further increase width on very small screens */
-        padding: 0.5rem; /* Further adjust padding */
-        top: 10%; /* Adjust top position */
-        right: 5%; /* Adjust right position */
-        font-size: 0.9rem; /* Adjust font size for better readability */
-    }
+    top: 380;
+    left: 40;
+    backdrop-filter: blur( 35px);
+    padding: 15px;
+    border-radius: 15px;
+    width: 40%;
 }
 
 .big-text {
-    color: #fff;
+    color: black;
     font-size: 70px;
     line-height: 70px;
 }
@@ -315,7 +310,7 @@ video {
 .big-text .stroke {
     color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: black;
 }
 
 .head-p {
@@ -332,19 +327,51 @@ video {
     margin-top: 40px;
 }
 
-@media(max-width: 768px) {
-    .navbar .links,
-    .navbar .reg_btn {
-        display: none;
+/* Tablet */
+@media (max-width: 768px) {
+    .head-text {
+        top: 300px;
+        right: 50px;
+        width: 60%;
     }
-    .navbar .toggle_btn {
-        display: block;
+
+    .big-text {
+        font-size: 50px;
+        line-height: 50px;
     }
-    .dropdown_menu {
-        display: block;
+
+    .head-p {
+        font-size: 16px;
+    }
+
+    .see {
+        padding: 5px 10px;
+        margin-top: 30px;
     }
 }
 
+/* Mobile */
+@media (max-width: 480px) {
+    .head-text {
+        top: 300px;
+        right: 20px;
+        width: 80%;
+    }
+
+    .big-text {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .head-p {
+        font-size: 14px;
+    }
+
+    .see {
+        padding: 4px 8px;
+        margin-top: 20px;
+    }
+}
 
 /* about section */
 
@@ -451,6 +478,94 @@ h2 .stroke-b {
     scale: 1.05;
 }
 
+/* Media Queries */
+
+/* For tablets */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 40px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .about-all {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        width: 80%;
+        left: 0;
+        top: -20;
+    }
+
+    .about-img3 {
+        width: 90%;
+        margin: 10px 0;
+        top: -35px;
+        left: 40px;
+    }
+
+    .about-img1,
+    .about-img2 {
+        display: none;
+    }
+
+    .hr-b {
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+    }
+
+    .vision {
+        left: 0;
+        top: 300px;
+    }
+
+    .brand {
+        top: -200px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+
+    .about-text {
+        width: 90%;
+        left: 0;
+        top: -20px;
+        font-size: 16px;
+    }
+
+    .about-img1,
+    .about-img2,
+    .about-img3 {
+        width: 90%;
+        left: 20;
+        margin: 10px 0;
+    }
+
+    .hr-b {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .vision {
+        top: 345px;
+        left: 0;
+    }
+
+    .brand {
+        top: -270px;
+    }
+}
+
 /* our service section */
 .section__container{
     background-image: url(./Assets/img1\ \(6\).jpg);
@@ -468,26 +583,26 @@ h2 .stroke-b {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-  }
+}
   
-  .service__header__content p {
+.service__header__content p {
     max-width: 600px;
-  }
-  .service-h2{
+}
+.service-h2{
     color: white;
-  }
-  .service-hr-b{
+}
+.service-hr-b{
     width: 13%;
     border: 1.7px solid rgb(20, 113, 219);
     position: relative;
     left: 540;
     bottom: -57;
-  }
-  .service-p{
+}
+.service-p{
     color: white;
-  }
+}
   
-  .service__btn {
+.service__btn {
     padding: 0.75rem 1rem;
     outline: none;
     font-size: 1rem;
@@ -498,32 +613,32 @@ h2 .stroke-b {
     white-space: nowrap;
     cursor: pointer;
     transition: 0.3s;
-  }
+}
   
-  .service__btn:hover {
+.service__btn:hover {
     color: #fff;
     background-color: rgb(22, 22, 22);
     border: 1px solid rgb(22, 22, 22);
-  }
+}
   
-  .service__grid {
+.service__grid {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     width: 100%;
-  }
+}
   
-  .service__card {
+.service__card {
     padding: 2rem;
     text-align: center;
     border-radius: 10px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     background-color: white;
-  }
+}
   
-  .service__card span {
+.service__card span {
     display: inline-block;
     margin-bottom: 1rem;
     padding: 10px 20px;
@@ -532,32 +647,85 @@ h2 .stroke-b {
     background-color: var(--primary-color-light);
     border-radius: 100%;
     transition: 0.3s;
-  }
+}
   
-  .service__card h4 {
+.service__card h4 {
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--text-dark);
-  }
+}
   
-  .service__card p {
+.service__card p {
     margin-bottom: 1rem;
     color: var(--text-light);
-  }
+}
   
-  .service__card a {
+.service__card a {
     color: var(--primary-color);
-  }
+}
   
-  .service__card a:hover {
+.service__card a:hover {
     color: var(--primary-color-dark);
-  }
+}
   
-  .service__card:hover span {
+.service__card:hover span {
     color: var(--primary-color-light);
     background-color: var(--primary-color);
-  }
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) { /* Tablet styles */
+    .section__container {
+        padding: 20px 60px; /* Reduce padding */
+        height: auto; /* Allow height to adjust based on content */
+    }
+    
+    .service__header {
+        flex-direction: column; /* Stack header elements */
+        align-items: flex-start; /* Align items to the start */
+    }
+    
+    .service__grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
+    }
+}
+
+@media (max-width: 768px) { /* Mobile styles */
+    .section__container {
+        padding: 20px 30px; /* Further reduce padding */
+        height: auto; /* Allow height to adjust based on content */
+    }
+    
+    .service__header {
+        align-items: center; /* Center align for mobile */
+        text-align: center; /* Center text */
+    }
+    
+    .service__grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+    
+    .service__card {
+        padding: 1.5rem; /* Reduce padding in cards */
+    }
+    
+    .service__btn {
+        width: 100%; /* Full width button on mobile */
+    }
+    
+    .service-h2 {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+
+    .service-p {
+        font-size: 0.8rem;
+    }
+
+    .service-hr-b {
+        display: none;
+    }
+}
 
 /* Testimonal Section */
 .testimonials {
@@ -570,6 +738,7 @@ h2 .stroke-b {
 
 .testimonial-subtitle h2 {
     color: black;
+    max-width: 120px;
 }
 
 .testimonials::after {
@@ -623,6 +792,79 @@ h2 .stroke-b {
 .testimonial p {
     font-size: 16px;
     font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) { /* Tablet styles */
+    .testimonial-container {
+        height: auto; /* Allow height to adjust based on content */
+        margin-left: 5%; /* Reduce side margins */
+        margin-right: 5%; /* Reduce side margins */
+    }
+
+    .testimonial-subtitle h2 {
+        max-width: 600px;
+        position: relative;
+        top: -50;
+        margin-left: -20;
+        font-size: 25px;
+        left: 85%;
+    }
+
+    .testimonial img {
+        width: 150px; /* Reduce image size */
+        height: 150px; /* Reduce image size */
+        position: relative;
+        top: 0px;
+        left: -550px;
+    }
+
+    .testimonial p {
+        font-size: 14px; /* Adjust font size */
+        position: relative;
+        top: -150px;
+        left: -170px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) { /* Mobile styles */
+    .testimonial-container {
+        margin-left: 0; /* Remove side margins */
+        margin-right: 0; /* Remove side margins */
+        padding: 0 10px; /* Add some padding */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .testimonial {
+        left: 0; /* Center the testimonial */
+        top: 40; /* Adjust position */
+    }
+
+    .testimonial-subtitle h2 {
+        max-width: 600px;
+        position: relative;
+        top: -50;
+        margin-left: -20;
+        font-size: 20px;
+        left: 50%;
+    }
+
+    .testimonial img {
+        width: 120px; /* Further reduce image size */
+        height: 120px; /* Further reduce image size */
+        position: relative;
+        top: -30px;
+        left: -120px;
+    }
+
+    .testimonial p {
+        font-size: 10px; /* Adjust font size */
+        position: relative;
+        top: -150px;
+        left: 160px;
+        max-width: 200px;
+    }
 }
 
 /* HMO Section */
@@ -748,19 +990,47 @@ h2 .stroke-b {
     transition: 0.7s ease;
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .parallax {
+        height: 300px; /* Reduce height for smaller screens */
+        padding: 10px 60px; /* Adjust padding */
+    }
 
+    .parallax-overlay {
+        flex-direction: column; /* Stack content vertically */
+        padding: 10px; /* Add some padding */
+    }
 
+    .sot {
+        font-size: 35px; /* Reduce font size */
+    }
 
+    .p3 {
+        font-size: 18px; /* Reduce font size */
+    }
 
+    .btn4 {
+        margin-left: 0; /* Remove margin for smaller screens */
+        margin-top: 10px; /* Add top margin */
+        /* width: 100%; Make button full width */
+    }
+}
 
+@media (max-width: 480px) {
+    .parallax {
+        height: 250px; /* Further reduce height for very small screens */
+        padding: 10px 20px; /* Further adjust padding */
+    }
 
+    .sot {
+        font-size: 28px; /* Further reduce font size */
+    }
 
-
-
-
-
-
-
+    .p3 {
+        font-size: 16px; /* Further reduce font size */
+    }
+}
 
 /* footer Section styling */
 footer{

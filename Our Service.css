@@ -273,6 +273,20 @@ li.dropdown {
     scale: 0.95;
 }
 
+@media(max-width: 768px) {
+    .navbar .links,
+    .navbar .reg_btn {
+        display: none;
+    }
+    .navbar .toggle_btn {
+        display: block;
+        color: #fff;
+    }
+    .dropdown_menu {
+        display: block;
+    }
+}
+
 .head-video {
     width: 100%;
     height: 200vh;
@@ -320,16 +334,51 @@ video {
     margin-top: 40px;
 }
 
-@media(max-width: 768px) {
-    .navbar .links,
-    .navbar .reg_btn {
-        display: none;
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .head-text {
+        top: 200px;
+        right: 50px;
+        width: 60%;
     }
-    .navbar .toggle_btn {
-        display: block;
+
+    .big-text {
+        font-size: 50px;
+        line-height: 50px;
     }
-    .dropdown_menu {
-        display: block;
+
+    .head-p {
+        font-size: 16px;
+    }
+
+    .see {
+        padding: 5px 10px;
+        margin-top: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .head-text {
+        top: 200px;
+        right: 20px;
+        width: 80%;
+    }
+
+    .big-text {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .head-p {
+        font-size: 14px;
+    }
+
+    .see {
+        padding: 4px 8px;
+        margin-top: 20px;
     }
 }
 
@@ -404,11 +453,60 @@ video {
     border: 2px white solid;
     position: relative;
     bottom: 10;
+    border-radius: 20px;
 }
 
 .health-btn:hover{
     background-color: white;
     color: black;
+}
+
+/* Styles for tablets */
+@media (max-width: 768px) {
+    .health-top, .health-down {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .health-head-img, .health-head-img2 {
+        height: 200px; /* Reduce height for smaller screens */
+        width: 100%; /* Make images responsive */
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+
+    .health-text {
+        font-size: 24px; /* Reduce font size for better readability */
+        padding-top: 50px; /* Adjust padding */
+        margin-bottom: 30px;
+    }
+
+    .health-btn {
+        font-size: 16px; /* Reduce button font size */
+        padding: 6px 15px; /* Adjust button padding */
+    }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 480px) {
+    .health-top, .health-down {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 5px; /* Further reduce padding */
+    }
+
+    .health-head-img, .health-head-img2 {
+        height: 150px; /* Further reduce height */
+        width: 100%; /* Ensure full width */
+    }
+
+    .health-text {
+        font-size: 20px; /* Further reduce font size */
+        padding-top: 30px; /* Adjust padding */
+    }
+
+    .health-btn {
+        font-size: 14px; /* Further reduce button font size */
+        padding: 5px 10px; /* Adjust button padding */
+    }
 }
 
 .wrapper2{
@@ -535,6 +633,69 @@ h2 .stroke-b {
     background-color: var(--primary-color);
   }
 
+ /* Styles for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .section__container {
+        padding: 20px 40px; /* Reduce padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 40px; /* Reduce font size */
+        margin-right: 50px; /* Adjust margin */
+    }
+
+    .service__header {
+        flex-direction: column; /* Stack header items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .service__grid {
+        grid-template-columns: 1fr; /* Stack cards in a single column */
+    }
+
+    .service__card {
+        padding: 16px; /* Reduce padding in service cards (1rem = 16px) */
+    }
+
+    .service__btn {
+        font-size: 14px; /* Adjust button font size (0.9rem = 14px) */
+        padding: 8px 12px; /* Adjust button padding (0.5rem 0.75rem = 8px 12px) */
+    }
+}
+
+/* Styles for mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .section__container {
+        padding: 10px 20px; /* Further reduce padding */
+    }
+
+    h2 {
+        font-size: 30px; /* Further reduce font size */
+        margin-right: 20px; /* Adjust margin */
+    }
+
+    .service__header {
+        align-items: center; /* Center items */
+    }
+
+    .service__grid {
+        grid-template-columns: 1fr; /* Keep cards in a single column */
+    }
+
+    .service__card {
+        padding: 8px; /* Further reduce padding in service cards (0.5rem = 8px) */
+    }
+
+    .service__btn {
+        font-size: 12px; /* Further adjust button font size (0.8rem = 12px) */
+        padding: 6px 10px; /* Adjust button padding (0.4rem 0.6rem = 6px 10px) */
+    }
+
+    .service-hr-b {
+        display: none;
+    }
+}
+
 .parallax-overlay{
     position: relative;
     top: 0;
@@ -591,6 +752,50 @@ h2 .stroke-b {
     color: #fff;
     transform: translateY(-5px);
     transition: 0.7s ease;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .parallax {
+        margin-top: 300px;
+        height: 300px; /* Reduce height for smaller screens */
+        padding: 10px 60px; /* Adjust padding */
+    }
+
+    .parallax-overlay {
+        flex-direction: column; /* Stack content vertically */
+        padding: 10px; /* Add some padding */
+    }
+
+    .sot {
+        font-size: 35px; /* Reduce font size */
+    }
+
+    .p3 {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .btn4 {
+        margin-left: 0; /* Remove margin for smaller screens */
+        margin-top: 10px; /* Add top margin */
+        /* width: 100%; Make button full width */
+    }
+}
+
+@media (max-width: 480px) {
+    .parallax {
+        height: 250px; /* Further reduce height for very small screens */
+        padding: 10px 20px; /* Further adjust padding */
+        margin-top: 200px;
+    }
+
+    .sot {
+        font-size: 28px; /* Further reduce font size */
+    }
+
+    .p3 {
+        font-size: 16px; /* Further reduce font size */
+    }
 }
 
 .wrapper{
@@ -663,6 +868,66 @@ p.atext{
     background-color: #fff;
     color: rgb(20, 113, 219);
     border: 1px rgb(20, 113, 219) solid;
+}
+
+/* Styles for tablets */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .text1 {
+        height: 300px; /* Reduce height */
+        width: 100%; /* Make width responsive */
+        margin-right: 0; /* Remove margin */
+        margin-bottom: 20px; /* Add bottom margin */
+    }
+
+    p.atext {
+        font-size: 30px; /* Reduce font size */
+        padding-top: 50px; /* Adjust padding */
+        margin-left: 10px; /* Adjust margin */
+    }
+
+    .p5, .p6 {
+        font-size: 20px; /* Reduce font size */
+    }
+
+    .btn5 {
+        font-size: 14px; /* Reduce button font size */
+        padding: 8px 20px; /* Adjust padding */
+    }
+
+    .about1 h2 {
+        text-align: center;
+    }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .text1 {
+        height: 200px; /* Further reduce height */
+        width: 100%; /* Ensure full width */
+    }
+
+    p.atext {
+        font-size: 24px; /* Further reduce font size */
+        padding-top: 30px; /* Adjust padding */
+    }
+
+    .p5, .p6 {
+        font-size: 18px; /* Further reduce font size */
+    }
+
+    .btn5 {
+        font-size: 12px; /* Further reduce button font size */
+        padding: 6px 15px; /* Adjust padding */
+    }
 }
 
 .health-big-text3{
