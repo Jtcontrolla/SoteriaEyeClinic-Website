@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const maps = document.querySelectorAll('.map');
 
   function checkScroll() {
-      const triggerBottom = window.innerHeight / 5 * 4; // Trigger point
+      const triggerBottom = window.innerHeight / 5 * 2; // Trigger point
 
       maps.forEach(map => {
           const mapTop = map.getBoundingClientRect().top;
@@ -75,19 +75,41 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.swiper-container', {
+  const swiper = new Swiper('.swiper-container', {
       loop: true,
-      slidesPerView: 5,  // Adjust as needed
-      spaceBetween: 10,  // Space between slides
+      slidesPerView: 5,
+      spaceBetween: 10,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true
       },
       effect: 'slide',
       speed: 600,
       autoplay: {
-        delay: 3000,  // Adjust autoplay delay as needed
-        disableOnInteraction: false,
+          delay: 3000,
+          disableOnInteraction: false,
       },
-    });
+      // Responsive breakpoints
+      breakpoints: {
+          // when window width is >= 320px
+          320: {
+              slidesPerView: 1,
+              spaceBetween: 10
+          },
+          // when window width is >= 768px
+          768: {
+              slidesPerView: 3,
+              spaceBetween: 15
+          },
+          // when window width is >= 1024px
+          1024: {
+              slidesPerView: 5,
+              spaceBetween: 10
+          }
+      }
+  });
 });

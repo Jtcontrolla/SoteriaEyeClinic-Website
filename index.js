@@ -11,23 +11,6 @@ toggleBtn.onclick = function (){
         : 'fa fa-bars'
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.swiper-container', {
-      loop: true,
-      slidesPerView: 5,  // Adjust as needed
-      spaceBetween: 10,  // Space between slides
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      effect: 'slide',
-      speed: 600,
-      autoplay: {
-        delay: 3000,  // Adjust autoplay delay as needed
-        disableOnInteraction: false,
-      },
-    });
-});
 
 // Testimonial
 const testimonials = document.querySelectorAll('.testimonial');
@@ -45,28 +28,22 @@ function showNextTestimonial() {
 setInterval(showNextTestimonial, 5000);
 
 // Head Text Scroll Animation
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
   const headText = document.querySelector('.head-text');
 
-  const isElementInViewport = (el) => {
-      const rect = el.getBoundingClientRect();
-      return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-  };
+  function checkScroll() {
+      const rect = headText.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
 
-  const handleScroll = () => {
-      if (isElementInViewport(headText)) {
-          headText.classList.add('visible');
-          window.removeEventListener('scroll', handleScroll); // Remove the event listener once the animation has been triggered
-      }
-  };
+      // Check if the element is in the viewport
+      if (rect.top < windowHeight && rect.bottom > 0) {
+          headText.classList.add('visible'); // Add the class to trigger animation
+          window.removeEventListener('scroll', checkScroll); // Remove event listener once visible
+        }
+  }
 
-  window.addEventListener('scroll', handleScroll);
-  handleScroll(); // Check on page load in case the element is already in view
+  window.addEventListener('scroll', checkScroll);
+  checkScroll(); // Check on initial load in case it's already in view
 });
 
 // About Scroll Animation
@@ -191,4 +168,45 @@ document.addEventListener('DOMContentLoaded', function() {
 
   window.addEventListener('scroll', showImages);
   showImages(); // Initial check
+});
+
+// Swiper JS
+document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      slidesPerView: 5,
+      spaceBetween: 10,
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+      },
+      effect: 'slide',
+      speed: 600,
+      autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+      },
+      // Responsive breakpoints
+      breakpoints: {
+          // when window width is >= 320px
+          320: {
+              slidesPerView: 1,
+              spaceBetween: 10
+          },
+          // when window width is >= 768px
+          768: {
+              slidesPerView: 3,
+              spaceBetween: 15
+          },
+          // when window width is >= 1024px
+          1024: {
+              slidesPerView: 5,
+              spaceBetween: 10
+          }
+      }
+  });
 });

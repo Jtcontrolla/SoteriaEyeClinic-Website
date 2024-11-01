@@ -107,7 +107,7 @@ header {
     background-image: url(./Assets/04/about-us-iii-scaled.jpg);
     background-size: cover;
     height: 118vh;
-    width: 100%;
+    width: auto;
 }
 
 .navbar {
@@ -227,7 +227,7 @@ li.dropdown {
 }
 
 .dropdown_menu.open {
-    height: 250px;
+    height: auto;
 }
 
 .dropdown_list>a {
@@ -287,8 +287,14 @@ li.dropdown {
 @media(max-width: 480px) {
     .navbar .logo img {
         width: 50px;
-        margin-left: -80px;
-        display: none;
+        left: -170;
+        /* display: none; */
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+        position: relative;
+        right: -60px;
     }
 }
 
@@ -311,14 +317,17 @@ video {
     padding: 15px;
     border-radius: 15px;
     width: 40%;
-    transform: translateX(100%); /* Start off-screen to the right */
+}
+
+.head-text {
     opacity: 0; /* Start invisible */
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Transition for smooth effect */
+    transform: translateX(200px); /* Start slightly lower */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
 }
 
 .head-text.visible {
+    opacity: 1; /* Fully visible */
     transform: translateX(0); /* Move to original position */
-    opacity: 1; /* Fade in */
 }
 
 .big-text {
@@ -611,7 +620,7 @@ h2 .stroke-b {
     }
 
     .vision {
-        top: 345px;
+        top: 355px;
         left: 0;
     }
 
@@ -921,7 +930,7 @@ h2 .stroke-b {
     .testimonial-subtitle h2 {
         max-width: 600px;
         position: relative;
-        top: -50;
+        top: -20;
         margin-left: -20;
         font-size: 20px;
         left: 50%;
@@ -931,15 +940,15 @@ h2 .stroke-b {
         width: 120px; /* Further reduce image size */
         height: 120px; /* Further reduce image size */
         position: relative;
-        top: -30px;
+        top: -40px;
         left: -120px;
     }
 
     .testimonial p {
         font-size: 10px; /* Adjust font size */
         position: relative;
-        top: -150px;
-        left: 160px;
+        top: -160px;
+        left: 140px;
         max-width: 200px;
     }
 }
@@ -1096,7 +1105,7 @@ h2 .stroke-b {
 
 @media (max-width: 480px) {
     .parallax {
-        height: 250px; /* Further reduce height for very small screens */
+        height: 280px; /* Further reduce height for very small screens */
         padding: 10px 20px; /* Further adjust padding */
     }
 

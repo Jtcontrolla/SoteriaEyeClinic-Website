@@ -149,7 +149,8 @@ header {
     color: black;
     cursor: pointer;
     display: none;
-    margin-right: 10%;
+    position: relative;
+    right: -100px;
 }
 
 li {
@@ -230,7 +231,7 @@ li.dropdown {
 }
 
 .dropdown_menu.open {
-    height: 100vh;
+    height: auto;
 }
 
 .dropdown_list>a {
@@ -287,6 +288,20 @@ li.dropdown {
     .dropdown_menu {
         display: block;
     }
+
+    @media(max-width: 480px) {
+        .navbar .logo img {
+            width: 50px;
+            left: -170;
+            /* display: none; */
+        }
+    
+        .navbar .toggle_btn {
+            display: block;
+            position: relative;
+            right: -60px;
+        }
+    }
 }
 
 .head-video {
@@ -308,6 +323,17 @@ video {
     padding: 15px;
     border-radius: 15px;
     width: 40%;
+}
+
+.head-text {
+    opacity: 0; /* Start invisible */
+    transform: translateX(200px); /* Start slightly lower */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+}
+
+.head-text.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Move to original position */
 }
 
 .big-text {
@@ -1104,6 +1130,15 @@ hr{
     .health-details4 li {
         margin-left: 10px; /* Reduce margin for list items */
     }
+}
+
+.health-big-text3, .health-para {
+    opacity: 0; /* Start hidden */
+    transition: opacity 1s ease-in-out; /* Transition effect */
+}
+
+.visible {
+    opacity: 1; /* Fade in */
 }
 
 /* HMO Section */

@@ -294,7 +294,7 @@ li.dropdown {
     .navbar .logo img {
         position: relative;
         width: 50px;
-        left: -200px;
+        left: -170px;
     }
 }
 
@@ -830,7 +830,7 @@ h2 .stroke-b {
 
 @media (max-width: 480px) {
     .parallax {
-        height: 250px; /* Further reduce height for very small screens */
+        height: 290px; /* Further reduce height for very small screens */
         padding: 10px 20px; /* Further adjust padding */
         margin-top: 300px;
     }
