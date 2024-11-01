@@ -116,7 +116,7 @@ header {
     /* max-width: 1200px; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     /* margin-left: 10%;
     margin-right: 10%; */
     top: 0;
@@ -131,6 +131,8 @@ header {
 
 .navbar .logo img {
     width: 100px;
+    position: relative;
+    left: -200px;
 }
 
 .navbar .links {
@@ -138,11 +140,13 @@ header {
     gap: 10px;
 }
 
+
 .navbar .toggle_btn {
     color: black;
     cursor: pointer;
     display: none;
-    margin-right: 10%;
+    position: relative;
+    right: -100px;
 }
 
 li {
@@ -181,7 +185,7 @@ li.dropdown {
     font-family: "Poppins";
     display: none;
     position: absolute;
-    right: 278px;
+    right: 240px;
     backdrop-filter: blur(15px);
     width: 200px;
     justify-content: center;
@@ -223,7 +227,7 @@ li.dropdown {
 }
 
 .dropdown_menu.open {
-    height: 100vh;
+    height: 250px;
 }
 
 .dropdown_list>a {
@@ -280,6 +284,14 @@ li.dropdown {
     }
 }
 
+@media(max-width: 480px) {
+    .navbar .logo img {
+        width: 50px;
+        margin-left: -80px;
+        display: none;
+    }
+}
+
 .head-video {
     width: 100%;
     height: 200vh;
@@ -299,6 +311,14 @@ video {
     padding: 15px;
     border-radius: 15px;
     width: 40%;
+    transform: translateX(100%); /* Start off-screen to the right */
+    opacity: 0; /* Start invisible */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Transition for smooth effect */
+}
+
+.head-text.visible {
+    transform: translateX(0); /* Move to original position */
+    opacity: 1; /* Fade in */
 }
 
 .big-text {
@@ -386,6 +406,7 @@ section {
     margin-top: 0px;
 }
 
+
 .hr-b {
     width: 8%;
     border: 1.7px solid rgb(20, 113, 219);
@@ -441,10 +462,32 @@ h2 .stroke-b {
     top: -185;
 }
 
+.about-img1, .about-img2, .about-img3 {
+    transform: translateY(100px); /* Start from below */
+    opacity: 0; /* Start invisible */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Transition for smooth effect */
+}
+
+.show {
+    transform: translateY(0); /* Move to original position */
+    opacity: 1; /* Make visible */
+}
+
 .about-h {
     color: rgb(107, 44, 44);
     font-size: 40px;
     font-weight: bold;
+}
+
+.about-h, .about-p {
+    transform: translateY(100px); /* Start from below */
+    opacity: 0; /* Start invisible */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Transition for smooth effect */
+}
+
+.show {
+    transform: translateY(0); /* Move to original position */
+    opacity: 1; /* Make visible */
 }
 
 .sp1 {
@@ -457,6 +500,17 @@ h2 .stroke-b {
     position: relative;
     top: 100;
     left: -615;
+}
+
+.about-h, .about-p, .about-link {
+    transform: translateY(100px); /* Start from below */
+    opacity: 0; /* Start invisible */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Transition for smooth effect */
+}
+
+.show {
+    transform: translateY(0); /* Move to original position */
+    opacity: 1; /* Make visible */
 }
 
 .brand {
@@ -601,7 +655,18 @@ h2 .stroke-b {
 .service-p{
     color: white;
 }
-  
+
+.service__header {
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Start slightly lower */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+}
+
+.service__header.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
+
 .service__btn {
     padding: 0.75rem 1rem;
     outline: none;
@@ -674,6 +739,17 @@ h2 .stroke-b {
     background-color: var(--primary-color);
 }
 
+.service__card {
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly down */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transition for smooth effect */
+}
+  
+.service__card.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
+
 /* Responsive styles */
 @media (max-width: 1024px) { /* Tablet styles */
     .section__container {
@@ -739,6 +815,7 @@ h2 .stroke-b {
 .testimonial-subtitle h2 {
     color: black;
     max-width: 120px;
+    margin-top: -20px;
 }
 
 .testimonials::after {
@@ -747,7 +824,7 @@ h2 .stroke-b {
     inset: 0;
     z-index: -1;
     opacity: .3;
-    background-image: url(./Assets/04/bg-ii-scaled.jpg);
+    /* background-image: url(./Assets/04/bg-ii-scaled.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

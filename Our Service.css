@@ -121,7 +121,7 @@ header {
     /* max-width: 1200px; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     /* margin-left: 10%;
     margin-right: 10%; */
     top: 0;
@@ -136,6 +136,8 @@ header {
 
 .navbar .logo img {
     width: 100px;
+    position: relative;
+    left: -200px;
 }
 
 .navbar .links {
@@ -147,7 +149,8 @@ header {
     color: black;
     cursor: pointer;
     display: none;
-    margin-right: 10%;
+    position: relative;
+    right: -100px;
 }
 
 li {
@@ -186,7 +189,7 @@ li.dropdown {
     font-family: "Poppins";
     display: none;
     position: absolute;
-    right: 278px;
+    right: 240px;
     backdrop-filter: blur(15px);
     width: 200px;
     justify-content: center;
@@ -228,7 +231,7 @@ li.dropdown {
 }
 
 .dropdown_menu.open {
-    height: 100vh;
+    height: 250px;
 }
 
 .dropdown_list>a {
@@ -281,9 +284,17 @@ li.dropdown {
     .navbar .toggle_btn {
         display: block;
         color: #fff;
+        position: relative;
+        right: -50px;
     }
     .dropdown_menu {
         display: block;
+    }
+
+    .navbar .logo img {
+        position: relative;
+        width: 50px;
+        left: -200px;
     }
 }
 
@@ -306,6 +317,17 @@ video {
     padding: 15px;
     border-radius: 15px;
     width: 40%;
+}
+
+.head-text {
+    opacity: 0; /* Initially hidden */
+    transform: translateX(-100%); /* Start slightly lower */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+}
+
+.head-text.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
 }
 
 .big-text {
@@ -461,6 +483,18 @@ video {
     color: black;
 }
 
+.health-head-img, .health-head-img2 {
+    opacity: 0;
+    transform: translateX(-100px); /* Start from the left */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for smooth effect */
+}
+
+/* Class to apply when the element is in view */
+.show {
+    opacity: 1;
+    transform: translateX(0); /* Move to original position */
+}
+
 /* Styles for tablets */
 @media (max-width: 768px) {
     .health-top, .health-down {
@@ -524,7 +558,7 @@ video {
 }
 
 h2 {
-    text-align: right;
+    text-align: left;
     margin-right: 100px;
     font-size: 55px;
     color: rgb(20, 113, 219);
@@ -542,26 +576,26 @@ h2 .stroke-b {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-  }
+}
   
-  .service__header__content p {
+.service__header__content p {
     max-width: 600px;
-  }
-  .service-h2{
+}
+.service-h2{
     color: white;
-  }
-  .service-hr-b{
+}
+.service-hr-b{
     width: 13%;
     border: 1.7px solid rgb(20, 113, 219);
     position: relative;
     left: 540;
     bottom: -57;
-  }
-  .service-p{
+}
+.service-p{
     color: white;
-  }
+}
   
-  .service__btn {
+.service__btn {
     padding: 0.75rem 1rem;
     outline: none;
     font-size: 1rem;
@@ -572,32 +606,32 @@ h2 .stroke-b {
     white-space: nowrap;
     cursor: pointer;
     transition: 0.3s;
-  }
+}
   
-  .service__btn:hover {
+.service__btn:hover {
     color: #fff;
     background-color: rgb(22, 22, 22);
     border: 1px solid rgb(22, 22, 22);
-  }
+}
   
-  .service__grid {
+.service__grid {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     width: 100%;
-  }
+}
   
-  .service__card {
+.service__card {
     padding: 2rem;
     text-align: center;
     border-radius: 10px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     background-color: white;
-  }
+}
   
-  .service__card span {
+.service__card span {
     display: inline-block;
     margin-bottom: 1rem;
     padding: 10px 20px;
@@ -606,32 +640,44 @@ h2 .stroke-b {
     background-color: var(--primary-color-light);
     border-radius: 100%;
     transition: 0.3s;
-  }
+}
   
-  .service__card h4 {
+.service__card h4 {
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--text-dark);
-  }
+}
   
-  .service__card p {
+.service__card p {
     margin-bottom: 1rem;
     color: var(--text-light);
-  }
+}
   
-  .service__card a {
+.service__card a {
     color: var(--primary-color);
-  }
+}
   
-  .service__card a:hover {
+.service__card a:hover {
     color: var(--primary-color-dark);
-  }
+}
   
-  .service__card:hover span {
+.service__card:hover span {
     color: var(--primary-color-light);
     background-color: var(--primary-color);
-  }
+}
+
+.service__card {
+    opacity: 0;
+    transform: translateX(-100px); /* Start from the left */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for smooth effect */
+}
+
+/* Class to apply when the element is in view */
+.show {
+    opacity: 1;
+    transform: translateX(0); /* Move to original position */
+}
 
  /* Styles for tablets (max-width: 768px) */
 @media (max-width: 768px) {
@@ -757,7 +803,7 @@ h2 .stroke-b {
 /* Media Queries */
 @media (max-width: 768px) {
     .parallax {
-        margin-top: 300px;
+        margin-top: 400px;
         height: 300px; /* Reduce height for smaller screens */
         padding: 10px 60px; /* Adjust padding */
     }
@@ -786,7 +832,7 @@ h2 .stroke-b {
     .parallax {
         height: 250px; /* Further reduce height for very small screens */
         padding: 10px 20px; /* Further adjust padding */
-        margin-top: 200px;
+        margin-top: 300px;
     }
 
     .sot {
@@ -801,6 +847,17 @@ h2 .stroke-b {
 .wrapper{
     display: flex;
     padding: 50px 50px;
+}
+
+.wrapper {
+    opacity: 0; /* Start hidden */
+    transform: translateX(100%); /* Start slightly below */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transition for smooth effect */
+}
+
+.wrapper.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
 }
 
 .text1{
@@ -852,6 +909,7 @@ p.atext{
     color: #fff;
     padding: 10px 25px;
     border: 1px black solid;
+    border-radius: 20px;
 }
 
 .lead{

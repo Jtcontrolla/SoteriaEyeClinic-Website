@@ -11,6 +11,42 @@ toggleBtn.onclick = function (){
         : 'fa fa-bars'
 }
 
+// Head Text Animation
+document.addEventListener('DOMContentLoaded', function() {
+  const headText = document.querySelector('.head-text');
+
+  const showHeadText = () => {
+      const windowHeight = window.innerHeight;
+      const headTextTop = headText.getBoundingClientRect().top;
+
+      if (headTextTop < windowHeight - 50) { // Trigger when the text is near the viewport
+          headText.classList.add('visible');
+      }
+  };
+
+  window.addEventListener('scroll', showHeadText);
+  showHeadText(); // Initial check
+});
+
+// Icons Animation
+document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('.animate');
+
+  const showImages = () => {
+      const windowHeight = window.innerHeight;
+      images.forEach(image => {
+          const imageTop = image.getBoundingClientRect().top;
+
+          if (imageTop < windowHeight - 50) { // Trigger when image is near the viewport
+              image.classList.add('visible');
+          }
+      });
+  };
+
+  window.addEventListener('scroll', showImages);
+  showImages(); // Initial check
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.swiper-container', {
       loop: true,

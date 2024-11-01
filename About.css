@@ -116,7 +116,7 @@ header {
     /* max-width: 1200px; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     /* margin-left: 10%;
     margin-right: 10%; */
     top: 0;
@@ -131,6 +131,8 @@ header {
 
 .navbar .logo img {
     width: 100px;
+    position: relative;
+    left: -200px;
 }
 
 .navbar .links {
@@ -142,7 +144,8 @@ header {
     color: black;
     cursor: pointer;
     display: none;
-    margin-right: 10%;
+    position: relative;
+    right: -100px;
 }
 
 li {
@@ -181,7 +184,7 @@ li.dropdown {
     font-family: "Poppins";
     display: none;
     position: absolute;
-    right: 278px;
+    right: 240px;
     backdrop-filter: blur(30px);
     width: 200px;
     justify-content: center;
@@ -223,7 +226,8 @@ li.dropdown {
 }
 
 .dropdown_menu.open {
-    height: 100vh;
+    height: auto;
+    width: 250px;
 }
 
 .dropdown_list>a {
@@ -274,11 +278,19 @@ li.dropdown {
     }
     .navbar .toggle_btn {
         display: block;
+        position: relative;
+        right: -50px;
     }
     .dropdown_menu {
         display: block;
         z-index: 2;
         width: 75vw;
+    }
+
+    .navbar .logo img {
+        position: relative;
+        width: 50px;
+        left: -200px;
     }
 }
 
@@ -301,6 +313,17 @@ video {
     padding: 15px;
     border-radius: 15px;
     width: 40%;
+}
+
+.head-text {
+    opacity: 0; /* Start invisible */
+    transform: translateX(200px); /* Start slightly lower */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+}
+
+.head-text.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Move to original position */
 }
 
 .big-text {
@@ -426,19 +449,14 @@ h2 .stroke-b {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    opacity: 0; /* Start invisible */
+    transform: translateY(30px); /* Start lower */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth transition */
 }
 
-.about-content::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    opacity: .2;
-    background-image: url(./Assets/consult-form\ 2.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 20px;
+.about-content.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
 }
   
 .about-image img {
@@ -532,6 +550,19 @@ h2 .stroke-b {
     transform: translateY(10px);
 }
 
+.feature-item-up,
+.feature-item-down {
+    opacity: 0; /* Start invisible */
+    transform: translateY(30px); /* Start lower */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth transition */
+}
+
+.feature-item-up.visible,
+.feature-item-down.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
+
 .features h3 {
     font-size: 24px;
     text-align: center;
@@ -620,6 +651,17 @@ h2 .stroke-b {
     font-weight: bolder;
 }
 
+.counter-container {
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Start slightly lower */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.counter-container.visible {
+    opacity: 1; /* Make it visible */
+    transform: translateY(0); /* Move to original position */
+}
+
 .cards {
     display: flex;
     justify-content: space-around;
@@ -658,6 +700,17 @@ h2 .stroke-b {
 .card p {
     font-size: 16px;
     color: #666;
+}
+
+.card {
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transition for smoothness */
+}
+
+.card.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
 }
 
 /* team section */
@@ -743,6 +796,17 @@ h2 .stroke-b {
 
 .image-container.active .overlay {
     opacity: 1;
+}
+
+.image-container {
+    opacity: 0; /* Start with the image container hidden */
+    transform: translateX(-100px); /* Start from the left (off-screen) */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transition for smooth effect */
+}
+
+.image-container.visible {
+    opacity: 1; /* Make it visible */
+    transform: translateX(0); /* Move to original position */
 }
 
 /* Media Query for tablets */

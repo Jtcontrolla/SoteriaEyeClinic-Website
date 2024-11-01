@@ -121,7 +121,7 @@ header {
     /* max-width: 1200px; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     /* margin-left: 10%;
     margin-right: 10%; */
     top: 0;
@@ -136,6 +136,8 @@ header {
 
 .navbar .logo img {
     width: 100px;
+    position: relative;
+    left: -200px;
 }
 
 .navbar .links {
@@ -186,7 +188,7 @@ li.dropdown {
     font-family: "Poppins";
     display: none;
     position: absolute;
-    right: 278px;
+    right: 240px;
     backdrop-filter: blur(15px);
     width: 200px;
     justify-content: center;

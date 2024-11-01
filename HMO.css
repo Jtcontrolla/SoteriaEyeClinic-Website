@@ -114,7 +114,7 @@ header {
     /* max-width: 1200px; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     /* margin-left: 10%;
     margin-right: 10%; */
     top: 0;
@@ -129,6 +129,8 @@ header {
 
 .navbar .logo img {
     width: 100px;
+    position: relative;
+    left: -200px;
 }
 
 .navbar .links {
@@ -179,7 +181,7 @@ li.dropdown {
     font-family: "Poppins";
     display: none;
     position: absolute;
-    right: 278px;
+    right: 240px;
     backdrop-filter: blur(15px);
     width: 200px;
     justify-content: center;
@@ -221,7 +223,7 @@ li.dropdown {
 }
 
 .dropdown_menu.open {
-    height: 100vh;
+    height: auto;
 }
 
 .dropdown_list>a {
@@ -273,9 +275,17 @@ li.dropdown {
     }
     .navbar .toggle_btn {
         display: block;
+        position: relative;
+        right: -50px;
     }
     .dropdown_menu {
         display: block;
+    }
+
+    .navbar .logo img {
+        position: relative;
+        width: 50px;
+        left: -200px;
     }
 }
 
@@ -410,6 +420,17 @@ video {
     color: transparent;
     -webkit-text-stroke-color: rgb(20, 113, 219);
     -webkit-text-stroke-width: 1.8px;
+}
+
+.flex-img {
+    opacity: 0; /* Initially hidden */
+    transform: translateX(-100%); /* Start slightly lower */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+}
+
+.flex-img.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Move to original position */
 }
 
 .parallax{

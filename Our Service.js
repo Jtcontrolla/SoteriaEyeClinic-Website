@@ -11,28 +11,76 @@ toggleBtn.onclick = function (){
         : 'fa fa-bars'
 }
 
-// Get the modal element
-var modal = document.getElementById("cataract-surgery-modal");
+// Head Text Animation
+document.addEventListener('DOMContentLoaded', function() {
+  const headText = document.querySelector('.head-text');
 
-// Get the button that opens the modal
-var btn = document.querySelector(".health-btn[data-target='#cataract-surgery-modal']");
+  const showHeadText = () => {
+      const windowHeight = window.innerHeight;
+      const headTextTop = headText.getBoundingClientRect().top;
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close-btn")[0];
+      if (headTextTop < windowHeight - 50) { // Trigger when the text is near the viewport
+          headText.classList.add('visible');
+      }
+  };
 
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+  window.addEventListener('scroll', showHeadText);
+  showHeadText(); // Initial check
+});
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+document.addEventListener("DOMContentLoaded", function() {
+  const wrapper = document.querySelector('.wrapper');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              wrapper.classList.add('visible'); // Add the visible class when in view
+              observer.unobserve(entry.target); // Stop observing after it has animated
+          }
+      });
+  });
+
+  observer.observe(wrapper); // Start observing the wrapper
+});
+
+// Health Card
+document.addEventListener("DOMContentLoaded", function() {
+  const elements = document.querySelectorAll('.health-head-img, .health-head-img2');
+
+  function checkScroll() {
+      const triggerBottom = window.innerHeight / 5 * 4; // Adjust as needed
+
+      elements.forEach(element => {
+          const box = element.getBoundingClientRect();
+          if (box.top < triggerBottom) {
+              element.classList.add('show');
+          } else {
+              element.classList.remove('show');
+          }
+      });
   }
-}
+
+  window.addEventListener('scroll', checkScroll);
+  checkScroll(); // Initial check
+});
+
+// Service Card
+document.addEventListener("DOMContentLoaded", function() {
+  const serviceCards = document.querySelectorAll('.service__card');
+
+  function checkScroll() {
+      const triggerBottom = window.innerHeight / 5 * 4; // Adjust as needed
+
+      serviceCards.forEach(card => {
+          const box = card.getBoundingClientRect();
+          if (box.top < triggerBottom) {
+              card.classList.add('show');
+          } else {
+              card.classList.remove('show');
+          }
+      });
+  }
+
+  window.addEventListener('scroll', checkScroll);
+    checkScroll(); // Initial check
+});
