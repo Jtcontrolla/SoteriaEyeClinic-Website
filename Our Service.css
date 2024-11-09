@@ -1,0 +1,1227 @@
+/* Googlefonts*/
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700,900);
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i);
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+/*p*/
+p{
+    margin-top: 20px;
+}
+
+
+/* #preloader {
+    overflow: hidden;
+    background: rgb(20, 113, 219);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 9999999;
+    color: #fff;
+  }
+  
+  #preloader .jumper {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+  }
+  
+  #preloader .jumper > div {
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    position: absolute;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: jumper 1s 0s linear infinite;
+    animation: jumper 1s 0s linear infinite;
+  }
+  
+  #preloader .jumper > div:nth-child(2) {
+    -webkit-animation-delay: 0.33333s;
+    animation-delay: 0.33333s;
+  }
+  
+  #preloader .jumper > div:nth-child(3) {
+    -webkit-animation-delay: 0.66666s;
+    animation-delay: 0.66666s;
+  } */
+
+
+/* @-webkit-keyframes jumper {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    5% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes jumper {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    5% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  } */
+
+body {
+    background-color: whitesmoke;
+    font-family: "poppins, san serif";
+}
+
+
+/* header */
+
+header {
+    background-color: whitesmoke;
+    background-image: url(./Assets/about\ img\ 1.jpg);
+    background-size: cover;
+    height: 118vh;
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    /* max-width: 1200px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    top: 0;
+    position: absolute;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.navbar .logo {
+    margin-left: 100px;
+}
+
+.navbar .logo img {
+    width: 100px;
+    position: relative;
+    left: -200px;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .toggle_btn {
+    color: black;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    right: -100px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+.links>li>a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 1px outset #ccc;
+    padding: 5px 14px;
+    margin: 15px;
+    font-weight: bold;
+    font-family: "Poppins";
+}
+
+.links>li>a:hover {
+    color: rgb(20, 113, 219);
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown .dropbtn {
+    border: none;
+}
+
+.dropdown-content {
+    font-family: "Poppins";
+    display: none;
+    position: absolute;
+    right: 240px;
+    backdrop-filter: blur(15px);
+    width: 200px;
+    justify-content: center;
+    margin-top: 5px;
+    border-radius: 35px;
+}
+
+.dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    color: rgb(20, 113, 219);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 2rem;
+    width: 250px;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
+}
+
+.dropdown_menu.open {
+    height: 250px;
+}
+
+.dropdown_list>a {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.dropdown_menu .reg_btn {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin: 0 20%;
+}
+
+.reg_btn {
+    background-color: rgb(22, 22, 22);
+    color: #fff;
+    padding: 5px 14px;
+    margin: 15px;
+    margin-right: 100px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale .2 ease;
+}
+
+.reg_btn:hover {
+    scale: 1.05;
+    color: #fff;
+    background-color: rgb(20, 113, 219);
+}
+
+.reg_btn:active {
+    scale: 0.95;
+}
+
+@media(max-width: 768px) {
+    .navbar .links,
+    .navbar .reg_btn {
+        display: none;
+    }
+    .navbar .toggle_btn {
+        display: block;
+        color: #fff;
+        position: relative;
+        right: -50px;
+    }
+    .dropdown_menu {
+        display: block;
+    }
+
+    .navbar .logo img {
+        position: relative;
+        width: 50px;
+        left: -170px;
+    }
+}
+
+.head-video {
+    width: 100%;
+    height: 200vh;
+}
+
+video {
+    width: 100%;
+}
+
+.head-text {
+    z-index: 1;
+    color: black;
+    position: absolute;
+    top: 250;
+    right: 110;
+    backdrop-filter: blur( 5px);
+    padding: 15px;
+    border-radius: 15px;
+    width: 40%;
+}
+
+.head-text {
+    opacity: 0; /* Initially hidden */
+    transform: translateX(-100%); /* Start slightly lower */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+}
+
+.head-text.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
+
+.big-text {
+    color: #fff;
+    font-size: 70px;
+    line-height: 70px;
+}
+
+.big-text .stroke {
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.head-p {
+    color: #131212;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.see {
+    padding: 6px 15px;
+    color: rgb(107, 44, 44);
+    border-radius: 20px;
+    border: 1px outset;
+    margin-top: 40px;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .head-text {
+        top: 200px;
+        right: 50px;
+        width: 60%;
+    }
+
+    .big-text {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .head-p {
+        font-size: 16px;
+    }
+
+    .see {
+        padding: 5px 10px;
+        margin-top: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .head-text {
+        top: 200px;
+        right: 20px;
+        width: 80%;
+    }
+
+    .big-text {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .head-p {
+        font-size: 14px;
+    }
+
+    .see {
+        padding: 4px 8px;
+        margin-top: 20px;
+    }
+}
+
+/* Health img Services Section */
+
+.health-img{
+    padding: 40px 40px;
+}
+
+.health-top, .health-down{
+    display: flex;
+    padding: 10px 2px 0 0;
+}
+
+.health-head-img{
+    height: 300px;
+    width: 400px;
+    border: 1px grey solid;
+    text-align: center;
+    background-image: url(Assets/astigmatism.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 10px;
+    padding-top: 20px;
+    border-radius: 5px;
+    border: 0px groove;
+    text-align: center;
+}
+
+.health-head-img2{
+    height: 300px;
+    width: 400px;
+    border: 1px grey solid;
+    text-align: center;
+    background-image: url(Assets/astigmatism.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 10px;
+    padding-top: 20px;
+    border-radius: 5px;
+    border: 0px groove;
+}
+
+.health-head-img:nth-child(2){
+    background-image: url(Assets/img1\ \(6\).jpg);
+    text-align: center;
+}
+.health-head-img:nth-child(3){
+    background-image: url(Assets/img1\ \(11\).jpg);
+}
+.health-head-img2:nth-child(1){
+    background-image: url(Assets/img1\ \(10\).jpg);
+}
+.health-head-img2:nth-child(2){
+    background-image: url(Assets/img1\ \(9\).jpg);
+}
+.health-text{
+    font-size: 30px;
+    color: white;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    /* left: 30; */
+    text-align: center;
+    margin-right: 0;
+}
+
+.health-btn{
+    font-size: 20px;
+    color: white;
+    padding: 8px 25px;
+    background-color: transparent;
+    border: 2px white solid;
+    position: relative;
+    bottom: 10;
+    border-radius: 20px;
+}
+
+.health-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.health-head-img, .health-head-img2 {
+    opacity: 0;
+    transform: translateX(-100px); /* Start from the left */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for smooth effect */
+}
+
+/* Class to apply when the element is in view */
+.show {
+    opacity: 1;
+    transform: translateX(0); /* Move to original position */
+}
+
+/* Styles for tablets */
+@media (max-width: 768px) {
+    .health-top, .health-down {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .health-head-img, .health-head-img2 {
+        height: 200px; /* Reduce height for smaller screens */
+        width: 100%; /* Make images responsive */
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+
+    .health-text {
+        font-size: 24px; /* Reduce font size for better readability */
+        padding-top: 50px; /* Adjust padding */
+        margin-bottom: 30px;
+    }
+
+    .health-btn {
+        font-size: 16px; /* Reduce button font size */
+        padding: 6px 15px; /* Adjust button padding */
+    }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 480px) {
+    .health-top, .health-down {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 5px; /* Further reduce padding */
+    }
+
+    .health-head-img, .health-head-img2 {
+        height: 150px; /* Further reduce height */
+        width: 100%; /* Ensure full width */
+    }
+
+    .health-text {
+        font-size: 20px; /* Further reduce font size */
+        padding-top: 30px; /* Adjust padding */
+    }
+
+    .health-btn {
+        font-size: 14px; /* Further reduce button font size */
+        padding: 5px 10px; /* Adjust button padding */
+    }
+}
+
+.wrapper2{
+    padding: 0px 40px;
+}
+
+/* our service section */
+.section__container{
+    background-color: #e6e0e0;
+    height: 900px;
+    margin: 0;
+    padding: 0;
+    padding: 20px 120px;
+    /* margin-top: 700px; */
+}
+
+h2 {
+    text-align: left;
+    margin-right: 100px;
+    font-size: 55px;
+    color: rgb(20, 113, 219);
+    font-weight: bold;
+}
+
+h2 .stroke-b {
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(20, 113, 219);
+}
+
+.service__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+  
+.service__header__content p {
+    max-width: 600px;
+}
+.service-h2{
+    color: white;
+}
+.service-hr-b{
+    width: 13%;
+    border: 1.7px solid rgb(20, 113, 219);
+    position: relative;
+    left: 540;
+    bottom: -57;
+}
+.service-p{
+    color: white;
+}
+  
+.service__btn {
+    padding: 0.75rem 1rem;
+    outline: none;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid rgb(20, 113, 219);
+    background-color: rgb(20, 113, 219);
+    border-radius: 5px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.service__btn:hover {
+    color: #fff;
+    background-color: rgb(22, 22, 22);
+    border: 1px solid rgb(22, 22, 22);
+}
+  
+.service__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+}
+  
+.service__card {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: white;
+}
+  
+.service__card span {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    background-color: var(--primary-color-light);
+    border-radius: 100%;
+    transition: 0.3s;
+}
+  
+.service__card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+  
+.service__card p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+  
+.service__card a {
+    color: var(--primary-color);
+}
+  
+.service__card a:hover {
+    color: var(--primary-color-dark);
+}
+  
+.service__card:hover span {
+    color: var(--primary-color-light);
+    background-color: var(--primary-color);
+}
+
+.service__card {
+    opacity: 0;
+    transform: translateX(-100px); /* Start from the left */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for smooth effect */
+}
+
+/* Class to apply when the element is in view */
+.show {
+    opacity: 1;
+    transform: translateX(0); /* Move to original position */
+}
+
+ /* Styles for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .section__container {
+        padding: 20px 40px; /* Reduce padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 40px; /* Reduce font size */
+        margin-right: 50px; /* Adjust margin */
+    }
+
+    .service__header {
+        flex-direction: column; /* Stack header items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .service__grid {
+        grid-template-columns: 1fr; /* Stack cards in a single column */
+    }
+
+    .service__card {
+        padding: 16px; /* Reduce padding in service cards (1rem = 16px) */
+    }
+
+    .service__btn {
+        font-size: 14px; /* Adjust button font size (0.9rem = 14px) */
+        padding: 8px 12px; /* Adjust button padding (0.5rem 0.75rem = 8px 12px) */
+    }
+}
+
+/* Styles for mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .section__container {
+        padding: 10px 20px; /* Further reduce padding */
+    }
+
+    h2 {
+        font-size: 30px; /* Further reduce font size */
+        margin-right: 20px; /* Adjust margin */
+    }
+
+    .service__header {
+        align-items: center; /* Center items */
+    }
+
+    .service__grid {
+        grid-template-columns: 1fr; /* Keep cards in a single column */
+    }
+
+    .service__card {
+        padding: 8px; /* Further reduce padding in service cards (0.5rem = 8px) */
+    }
+
+    .service__btn {
+        font-size: 12px; /* Further adjust button font size (0.8rem = 12px) */
+        padding: 6px 10px; /* Adjust button padding (0.4rem 0.6rem = 6px 10px) */
+    }
+
+    .service-hr-b {
+        display: none;
+    }
+}
+
+.parallax-overlay{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+.parallax{
+    background-image: url(Assets/Untitled-1.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    padding: 20px 120px;
+    /* margin-top: 700px; */
+}
+
+.parallax-overlay{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p3{
+    color: #fff;
+    font-size: 20px;
+}
+
+.sot{
+    font-size: 45px;
+    color: #fff;
+}
+
+.btn4{
+    margin-left: 180px;
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.btn4:hover{
+    background-color:rgb(20, 113, 219);
+    color: #fff;
+    transform: translateY(-5px);
+    transition: 0.7s ease;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .parallax {
+        margin-top: 400px;
+        height: 300px; /* Reduce height for smaller screens */
+        padding: 10px 60px; /* Adjust padding */
+    }
+
+    .parallax-overlay {
+        flex-direction: column; /* Stack content vertically */
+        padding: 10px; /* Add some padding */
+    }
+
+    .sot {
+        font-size: 35px; /* Reduce font size */
+    }
+
+    .p3 {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .btn4 {
+        margin-left: 0; /* Remove margin for smaller screens */
+        margin-top: 10px; /* Add top margin */
+        /* width: 100%; Make button full width */
+    }
+}
+
+@media (max-width: 480px) {
+    .parallax {
+        height: 290px; /* Further reduce height for very small screens */
+        padding: 10px 20px; /* Further adjust padding */
+        margin-top: 300px;
+    }
+
+    .sot {
+        font-size: 28px; /* Further reduce font size */
+    }
+
+    .p3 {
+        font-size: 16px; /* Further reduce font size */
+    }
+}
+
+.wrapper{
+    display: flex;
+    padding: 50px 50px;
+}
+
+.wrapper {
+    opacity: 0; /* Start hidden */
+    transform: translateX(100%); /* Start slightly below */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transition for smooth effect */
+}
+
+.wrapper.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
+
+.text1{
+    background-image: url(Assets/img7.png);
+    background-attachment: initial;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 1800px;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+p.atext{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+   margin-left: 20px;
+}
+
+.about1{
+    padding: 0px 20px;
+}
+
+.p5, .p6{
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: grey;
+}
+
+.p6{
+    margin-bottom: 50px;
+}
+
+.btn5{
+    font-size: 15px;
+    background-color: rgb(22, 22, 22);
+    color: #fff;
+    padding: 10px 25px;
+    border: 1px black solid;
+    border-radius: 20px;
+}
+
+.lead{
+    color: black;
+    font-size: 28px;
+}
+
+.brown{
+    font-size: 28px;
+    color: rgb(107, 44, 44);
+}
+
+.btn5:hover{
+    background-color: #fff;
+    color: rgb(20, 113, 219);
+    border: 1px rgb(20, 113, 219) solid;
+}
+
+/* Styles for tablets */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .text1 {
+        height: 300px; /* Reduce height */
+        width: 100%; /* Make width responsive */
+        margin-right: 0; /* Remove margin */
+        margin-bottom: 20px; /* Add bottom margin */
+    }
+
+    p.atext {
+        font-size: 30px; /* Reduce font size */
+        padding-top: 50px; /* Adjust padding */
+        margin-left: 10px; /* Adjust margin */
+    }
+
+    .p5, .p6 {
+        font-size: 20px; /* Reduce font size */
+    }
+
+    .btn5 {
+        font-size: 14px; /* Reduce button font size */
+        padding: 8px 20px; /* Adjust padding */
+    }
+
+    .about1 h2 {
+        text-align: center;
+    }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .text1 {
+        height: 200px; /* Further reduce height */
+        width: 100%; /* Ensure full width */
+    }
+
+    p.atext {
+        font-size: 24px; /* Further reduce font size */
+        padding-top: 30px; /* Adjust padding */
+    }
+
+    .p5, .p6 {
+        font-size: 18px; /* Further reduce font size */
+    }
+
+    .btn5 {
+        font-size: 12px; /* Further reduce button font size */
+        padding: 6px 15px; /* Adjust padding */
+    }
+}
+
+.health-big-text3{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(107, 44, 44);
+    padding-top: 10px;
+    font-family: "Poppins";
+    border-top: 2px solid rgb(231, 187, 187);
+    font-weight: bold;
+}
+
+.health-para{
+    display: flex;
+    padding: 0px 50px;
+}
+
+.health-img4{
+    background-image: url(Assets/about\ img\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    padding: 50px 10px;
+    width: 2300px;
+    margin-right: 100px;
+    color: #e6e0e0;
+    font-size: 28px;
+    display: block;
+    text-align: center;
+}
+
+/* footer Section styling */
+footer{
+    background-color: whitesmoke;
+    position: relative;
+    /* width: 100%; */
+    /* min-height: 350px; */
+    padding: 3rem 1rem;
+}
+.container {
+   /* max-width: 1140px; */
+   /* width: 100%; */
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.row{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.col{
+   /* min-width: 250px; */
+   color:rgb(22, 22, 22);
+   font-family: poppins;
+   padding:0 2rem;
+   width: 30%;
+}
+#company{
+    width: 40%;
+}
+#services{
+    margin-right: 0;
+}
+#useful-links{
+    margin-left: 0;
+}
+#contacts{
+
+}
+.col .logo{
+   width: 150px;
+   margin-bottom:25px;
+}
+.col h3{
+   color:rgb(20, 113, 219);
+   margin-bottom: 20px;
+   position: relative;
+   cursor: pointer;
+}
+.col h3::after{
+   content: '';
+   height:3px;
+   width:0px;
+   background-color: rgb(20, 113, 219);
+   position: absolute;
+   bottom: 0;
+   left:0;
+   transition: 0.3s ease;
+
+}
+.col h3:hover::after{
+   width:30px
+}
+.col .social a i{
+   color:rgb(20, 113, 219);
+   margin-top:2rem;
+   margin-right: 5px;
+   transition: 0.3s ease;
+}
+.col .social a i:hover{
+   transform: scale(1.5);
+   filter:grayscale(25);
+}
+.col .links a{
+   display: block;
+   text-decoration: none;
+   color:rgb(22, 22, 22);
+   margin-bottom: 5px;
+   position: relative;
+   transition: 0.3s ease;
+}
+.col .links a::before{
+   content:'';
+   height: 16px;
+   width:3px;
+   position: absolute;
+   top:5px;
+   left:-10px;
+   background-color: rgb(20, 113, 219);
+   transition: 0.5s ease;
+   opacity: 0;
+}
+.col .links a:hover::before{
+   opacity: 1;
+}
+.col .links a:hover{
+   transform: translateX(-8px);
+   color:rgb(20, 113, 219);
+}
+.col .contact-details{
+   display: inline-flex;
+
+   justify-content: space-between;
+}
+.col .contact-details i{
+   margin-right:15px;
+}
+.row .form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding:2rem 0;
+}
+.row .form input{
+   background-color: rgb(22, 22, 22);
+   color: #fff;
+   border:0;
+   outline:none;
+   padding:14px 20px;
+   border-radius: 6px;
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+}
+.form button{
+   padding:14px 20px;
+   border:0;
+   border-radius: 6px;
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+   background-color: rgb(20, 113, 219);
+}
+.line-footer{
+    border: 0.5px solid rgb(20, 113, 219);
+}
+.inner-content{
+    text-align: center;
+}
+
+/********** Responsive Design ********/
+@media(max-width:900px)
+{
+ .row{
+   flex-direction: column;
+ }
+ .col{
+   width: 100%;
+   text-align: left;
+   margin-bottom: 25px;
+ }
+}
+@media(max-width:768px)
+{
+ .row{
+   flex-direction: column;
+ }
+ .col{
+   width: 100%;
+   text-align: left;
+   margin-bottom: 20px;
+ }
+}
+
+.health-h2{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(107, 44, 44);
+    border-top: 2px solid rgb(231, 187, 187);
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(231, 187, 187);
+}
+
+.health-flex4{
+    display: flex;
+    padding: 20px 55px;
+}
+
+.health-left{
+    width: 3100px;
+    margin-left: 100px;
+}
+
+.head-text4{
+    color: rgb(107, 44, 44);
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.pa{
+    font-size: 20px;
+    color: #333;
+    font-weight: 520;
+    margin-bottom: 20px;
+    word-spacing: 4px;
+}
+
+.lst1 .lst-1{
+    font-size: 20px;
+}
+

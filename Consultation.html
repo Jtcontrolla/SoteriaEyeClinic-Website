@@ -1,0 +1,334 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation - Soteria Eye Clinc</title>
+    <!-- Css File-->
+    <link rel="stylesheet" href="./Consultation.css">
+    <link rel="icon" href="./Assets/logo.png">
+
+    <!-- Compiled Icon pack-->
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Compiled materialized css-->
+    <link rel="stylesheet" href="./css/materialize.min.css">
+
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- googlefont Poppins-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="./Assets/logo.png" alt=""></a>
+            </div>
+            <ul class="links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./consultation.html">Consultation</a></li>
+                <li><a href="./hmo.html">HMO</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="./about.html">About Us</a>
+                        <a href="./services.html">Our Services</a>
+                        <a href="./contact.html">Contact Us</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </nav>
+
+        <div class="dropdown_menu">
+            <li class="dropdown_list"><a href="./index.html">Home</a></li>
+            <li class="dropdown_list"><a href="./about.html">About Us</a></li>
+            <li class="dropdown_list"><a href="./services.html">Our Services</a></li>
+            <li class="dropdown_list"><a href="./consultation.html">Consultation</a></li>
+            <li class="dropdown_list"><a href="./hmo.html">HMO</a></li>
+            <li class="dropdown_list"><a href="./contact.html">Contact Us</a></li>
+        </div>
+
+        <div class="head-video">
+            <div class="head-text">
+                <h3 class="big-text">Your <span class="stroke">Vision,</span> <br> <span class="stroke">Our</span> Priority.</h3><br>
+                <p class="head-p">Expert eye care, unwavering commitiment. Exprience the best in opthaimology and optametry at Soteris Eye.</p>
+                <a href="" class="see">See the future clearly, today</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="appointment">
+        <h3>Book Your <span class="stroke-b">Appointment</span></h3>
+        <p>
+            We take pride in providing comprehensive eye treatment to the same high standards as the greatest eye clinics. 
+            We are a group of optometrists, opticians, ophthalmologists, front office and administrative personnel who are devoted and pleasant.
+            – just fill in the blanks below and we’ll get back to you soon.
+        </p>
+        <img class="glasses animate" id="img-effect" src="./Assets/glasses.png" alt="">
+        <img class="chart animate" id="img-effect" src="./Assets/imparment chart.png" alt="">
+        <img class="lens animate" id="img-effect" src="./Assets/contact lens.png" alt="">
+        <img class="vis-imp-machine animate" id="img-effect" src="./Assets/visual imparment machine.png" alt="">
+        <div class="form-container">
+            <div class="form-header">
+             <h1>
+              Consultation Form
+             </h1>
+             <img alt="Medical logo" src="./Assets/logo.png"/>
+            </div>
+            <form>
+             <div class="form-group">
+              <label for="name">
+               Name:
+              </label>
+              <div style="display: flex; gap: 10px;">
+               <input id="first-name" name="first-name" placeholder="First Name" type="text"/>
+               <input id="last-name" name="last-name" placeholder="Last Name" type="text"/>
+              </div>
+             </div>
+             <div class="form-group">
+              <label for="dob">
+               Date of Birth:
+              </label>
+              <input id="dob" name="dob" type="date"/>
+             </div>
+             <div class="form-group">
+              <label>
+               Gender
+              </label>
+              <div class="radio-group">
+               <label>
+                <input name="gender" type="radio" value="female"/>
+                Female
+               </label>
+               <label>
+                <input name="gender" type="radio" value="male"/>
+                Male
+               </label>
+              </div>
+             </div>
+             <div class="form-group">
+              <label for="email">
+               Email:
+              </label>
+              <input id="email" name="email" placeholder="name@example.com" type="email"/>
+             </div>
+             <div class="form-group">
+              <label for="phone">
+               Phone Number
+              </label>
+              <input id="phone" name="phone" placeholder="(+234) 000-0000" type="text"/>
+             </div>
+             <div class="form-group">
+              <label for="consultation-reason">
+               Please explain why you want a consultation?
+              </label>
+              <textarea id="consultation-reason" name="consultation-reason" placeholder="Type here..." rows="4"></textarea>
+             </div>
+             <div class="form-group">
+              <label>
+               Have you undergone a surgery before?
+              </label>
+              <div class="radio-group">
+               <label>
+                <input name="surgery" type="radio" value="yes"/>
+                Yes
+               </label>
+               <label>
+                <input name="surgery" type="radio" value="no"/>
+                No
+               </label>
+              </div>
+             </div>
+             <div class="form-group">
+              <label>
+               Please upload medical documents (if any)
+              </label>
+              <div class="file-upload">
+               <label for="file-upload">
+                Browse Files
+               </label>
+               <input id="file-upload" name="file-upload" type="file"/>
+              </div>
+             </div>
+             <div class="form-group">
+              <label for="appointment">
+               Book Your Appointment:
+              </label>
+              <div class="form-group">
+                <label for="branches">
+                    Branch
+                </label>
+                <select name="branch" id="branch">
+                    <option value="">Select a branch</option>
+                    <option value="delta">Delta</option>
+                    <option value="lagos">Lagos</option>
+                    <option value="uyo">Uyo</option>
+                </select>
+              </div>
+              <div style="display: flex; gap: 10px;">
+               <input id="appointment-date" name="appointment-date" type="date"/>
+               <input id="appointment-time" name="appointment-time" type="time"/>
+              </div>
+             </div>
+             <div class="form-group">
+              <button class="submit-btn" type="submit">
+               Submit
+              </button>
+             </div>
+            </form>
+           </div>
+    </section>
+
+    </div>
+    <div class="parallax">
+        <div class="parallax-overlay">
+            <div class="flex1">
+                <h4 class="sot">Book A Consultation</h4>
+                <p class="p3">We offer free eye evaluation in all our branches. This service is peculiar to Soteria Eye Clinic. Subsequently, we guarantee continuity and longevity of patient-clinic relations: via maintenance services, to all in our patient base.</p>
+            </div>
+            <a href="#" class="btn4">Book Now</a>
+        </div>
+    </div>
+
+
+      <!-- HMO Section -->
+      <section>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./Assets/05/reliance-hmo-1-300x197.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="./Assets/05/century-medicaid-300x197.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="./Assets/05/Green-bay-300x197.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="./Assets/05/greenfield-300x197.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="./Assets/05/ZENITH-300x197.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="./Assets/05/life-action-300x197.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="./Assets/05/RODING-300x197.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="./Assets/05/ng-mansar-300x197.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="./Assets/05/hallmark-300x197.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="./Assets/05/health-assure-1-300x197.jpg" alt="" /></div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- footer Section -->
+     <footer>
+        <div class="container">
+            <div class="row">
+                  <div class="col" id="company">
+                    <a href="./index.html"><img src="./Assets/logo.png" alt="" class="logo"></a>
+                      <p>
+                        Soteria Eye Clinic is a contemporary state-of-the-art Optometric and Optical Care Clinic. Centrally located in Lagos Nigeria, with operations in strategic geographical zones in the south, at Delta and Akwa-Ibom.
+                      </p>
+                      <div class="social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                  </div>
+
+
+                  <div class="col" id="services">
+                     <h3>Quick Links</h3>
+                     <div class="links">
+                        <a href="./about.html">About Us</a>
+                        <a href="./hmo.html">HMO</a>
+                        <a href="./consultation.html">Consultation</a>
+                        <a href="./services.html">Our Services</a>
+                        <a href="./contact.html">Contact Us</a>
+                     </div>
+                  </div>
+
+                  <div class="col" id="useful-links">
+                     <h3>Our Location 📍</h3>
+                     <div class="links">
+                        <h4>LAGOS OFFICE</h4>
+                        <p>
+                         Atlantic Shopping & Ent. Centre, Chevron Drive, Lekki, Lagos Nigeria
+                        </p>
+                        <h4>CORPORATE OFFICE</h4>
+                        <p>
+                            Shop 53A Delta Mall, Shoprite, Effurun Delta State, Nigeria
+                        </p>
+                        <h4>UYO OFFICE</h4>
+                        <p>
+                            Tropicana Mall Shop GBA Udo-Udoma Avenue Uyo, Nigeria.
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="col" id="contact">
+                      <h3>Contact</h3>
+                      <h4>HEAD OFFICE</h4>
+                      <br>
+                      <div class="contact-details">
+                         <i class="fa fa-location"></i>
+                         <p>
+                            28 Kotie Street Off Okumagba Warri
+                            Delta State,
+                            Nigeria
+                        </p>
+                      </div>
+                      <div class="contact-details">
+                         <i class="fa fa-phone"></i>
+                         <p>+2348063363506</p>
+                      </div>
+                      <div class="contact-details">
+                        <i class="fa fa-inbox"></i>
+                        <p>
+                            info@soteriaeyeclinic.com
+                        </p>
+                     </div>
+                  </div>
+            </div>
+
+            <div class="row">
+                  <div class="form">
+                    <form action="">
+                        <input type="text" placeholder="Email here...">
+                        <button><i class="fa fa-paper-plane"></i></button>
+                    </form>
+                  </div>
+            </div>
+
+        </div>
+        <hr class="line-footer">
+        <div class="inner-content">
+            <p>Copyright © 2024 Soteria Eye Clinic</a></p>
+        </div>
+        
+     </footer>
+
+     <script src="./Consultation.js"></script>
+</body>
+</html>
